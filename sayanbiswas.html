@@ -3,12 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="sayanbiswasstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>
-        Hello, I am Sayan Biswas.
-    </h1>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Sayan Biswas, an undergrad CSE student from India.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi there!
+
+            I'm Sayan Biswas, an undergraduate student in Computer Science and Engineering from India. My passion lies in software development, with a particular focus on Java, Kotlin, and data structures and algorithms (DSA). I love diving into code and exploring new technologies.
+            
+            On my GitHub profile, you'll find a range of projects that I've worked on. 
+            
+            My interests extend to Android app development, and I enjoy collaborating on open-source projects. I actively contribute to my GitHub repositories and engage with the developer community on LinkedIn and other platforms. Connecting with other developers and sharing knowledge is something I find incredibly rewarding.
+            
+            Feel free to check out my projects on GitHub, and let's connect if you share similar interests or have any questions!
+        </p>
+    </section>
+
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="project">
+            <h3><a href="https://github.com/Sbiswas001/StepTracker">Step Tracker</a></h3>
+                
+            <p>This is an ongoing project that I'm really excited about. It's related to fitness tracking, and I'm constantly working on new features and improvements.</p>
+        </div>
+        <div class="project">
+            <h3><a href="https://github.com/Sbiswas001/NumplexApp">Numplex App</a></h3>
+            <p>This app, developed in Kotlin, allows users to analyze and manipulate numerical properties. It's a fun project that combines my love for numbers and programming.</p>
+        </div>
+        
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sayan. All rights reserved.</p>
+    </footer>
 </body>
 </html>
