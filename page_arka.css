@@ -1,0 +1,205 @@
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+        scroll-behavior: smooth;
+      }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f1f1f1;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  p {
+    color: #555;
+  }
+  
+  header {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom:10px;
+  }
+  
+  .logo img {
+    width: 70px;
+    height: auto;
+  }
+  
+  
+  header h1 {
+    font-size: 20px;
+    margin-left:10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 5px;
+    
+  }
+  
+  nav ul li a {
+    color: #555;
+    text-decoration: none;
+    background-color: white;
+    padding:7px 15px 7px 15px ;
+    border-radius:50px;
+    border: 2px solid #e7e7e7;
+  }
+  
+  section {
+    padding: 60px 0;
+  }
+  
+  
+  
+  #hero .hero-content {
+    margin-top: 100px;
+  }
+  
+  #hero .hero-content p {
+    padding-bottom:15px;
+    opacity:0.6;
+    background-color:#eee;
+  }
+  
+  
+  #hero h2 {
+    font-size: 30px;
+    opacity:0.6;
+    background-color:#eee;
+  }
+  
+  .btn {
+  margin-top:1rem;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow:0 0px 26px #000;
+    animation: pulse 4s infinite;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  #about {
+    background-color: #fff;
+    
+  }
+  #hero {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height:80vh;
+  }
+  
+  #hero .hero-content {
+    margin-top: 100px;
+  }
+  
+  #hero .hero-content p {
+    padding-bottom:15px;
+    opacity:0.6;
+    background-color:#eee;
+  }
+  
+  
+  #hero h2 {
+    font-size: 30px;
+    opacity:0.6;
+    background-color:#eee;
+  }
+  
+  
+  form input,
+  form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #555;
+  }
+  
+  footer {
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size:13px;
+  }
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 35px;
+    right: 0px;
+    padding: 10px 15px;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.5s ease;
+    
+  }
+  
+  .back-to-top:hover {
+    opacity: 0.7;
+  }
+  
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  footer a{
+      text-decoration:none;
+      
+  }
