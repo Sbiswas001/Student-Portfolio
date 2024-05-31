@@ -1,72 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="sayanbiswasstyles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Sayan Biswas's Portfolio</title>
+    <link rel="icon" href="assets/images/sayanbiswas/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="sayanbiswas.css">
+    <script src="https://kit.fontawesome.com/2c6faefed4.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm Sayan Biswas, an undergrad Comuter Science Engineering student from India.</p>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi there!
-
-            I'm Sayan Biswas, an undergraduate student in Computer Science and Engineering from India. My passion lies in software development, with a particular focus on Java, Kotlin, and data structures and algorithms (DSA). I love diving into code and exploring new technologies.
-            
-            On my GitHub profile, you'll find a range of projects that I've worked on. 
-            
-            My interests extend to Android app development, and I enjoy collaborating on open-source projects. I actively contribute to my GitHub repositories and engage with the developer community on LinkedIn and other platforms. Connecting with other developers and sharing knowledge is something I find incredibly rewarding.
-            
-            Feel free to check out my projects on GitHub, and let's connect if you share similar interests or have any questions!
-        </p>
-    </section>
-
-    <section id="portfolio">
-        <h2>My Work</h2>
-        <div class="project">
-            <h3><a href="https://github.com/Sbiswas001/StepTracker">Step Tracker</a></h3>
-                
-            <p>This is an ongoing project that I'm really excited about. It's related to fitness tracking, and I'm constantly working on new features and improvements.</p>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/images/sayanbiswas/namelogo.png" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Undergrad Student</p>
+                <h1>Hi, I'm <span>Sayan</span><br>Biswas from India</h1>
+            </div>
         </div>
-        <div class="project">
-            <h3><a href="https://github.com/Sbiswas001/NumplexApp">Numplex App</a></h3>
-            <p>This app, developed in Kotlin, allows users to analyze and manipulate numerical properties. It's a fun project that combines my love for numbers and programming.</p>
+    </div>
+    <!----------about--------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/images/sayanbiswas/pic1.jpg" alt="Profile pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi there!
+
+                        I'm Sayan Biswas, an undergraduate student in Computer Science and Engineering from India. My
+                        passion lies in software development, with a particular focus on Java, Kotlin, and data
+                        structures and algorithms (DSA). I love diving into code and exploring new technologies.
+                        <br><br>
+                        My interests extend to Android app development, and I enjoy collaborating on open-source
+                        projects. I actively contribute to my GitHub repositories and engage with the developer
+                        community on LinkedIn and other platforms. Connecting with other developers and sharing
+                        knowledge is something I find incredibly rewarding.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>App Development</span><br>Building Android apps</li>
+                            <li><span>Web Development</span><br>Designing Websites</li>
+                            <li><span>UI/UX</span><br>Designing app logos</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Class Representative</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2027</span><br>B.Tech CSE from GCECT Kolkata, CGPA - 9.63</li>
+                            <li><span>2023</span><br>Standard XII from HAS Katwa, Marks - 93%</li>
+                            <li><span>2021</span><br>Standard X from HAS Katwa, Marks - 96.5%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Sayan. All rights reserved.</p>
-    </footer>
+    </div>
+    <!--------------services-------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>App Design</h2>
+                    <p>I have a proven track record of designing intuitive and visually appealing Android apps that
+                        enhance user experience. My expertise includes modern design principles, user-centric
+                        interfaces, and seamless functionality.</p>
+                    <a href="https://github.com/Sbiswas001/NumplexApp">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I specialize in creating modern, responsive websites that deliver exceptional user experiences
+                        across all devices. My designs focus on aesthetics, usability, and performance to ensure your
+                        online presence stands out.</p>
+                    <a href="https://github.com/Sbiswas001/Student-Portfolio">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Logo Design</h2>
+                    <p>I craft distinctive and memorable logos that effectively capture and communicate your brand's
+                        identity. My designs blend creativity and strategic thinking to ensure your logo leaves a
+                        lasting impression.</p>
+                    <a href="https://www.figma.com/design/GDnOpovYFzfd2bcP53Wf3A/App-Icon?t=hPtbvHCMJfm9QMvX-1">Learn
+                        more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------portfolio---------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/images/sayanbiswas/numplex.jpg" alt="NumplexApp">
+                    <div class="layer">
+                        <h3>Numplex App</h3>
+                        <p>This app offers a collection of utilities for analyzing and manipulating various properties
+                            of numbers.</p>
+                        <a href="https://github.com/Sbiswas001/NumplexApp"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/sayanbiswas/website showcase.png" alt="NumplexApp">
+                    <div class="layer">
+                        <h3>College Website</h3>
+                        <p>A website for students of GCECT, Kolkata; batch of 2023.</p>
+                        <a href="https://github.com/Sbiswas001/gcect-batch-2023"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/sayanbiswas/logoshowcase.png" alt="NumplexApp">
+                    <div class="layer">
+                        <h3>App Icon</h3>
+                        <p>This is an app icon I designed for my app.</p>
+                        <a href="https://www.figma.com/design/GDnOpovYFzfd2bcP53Wf3A/App-Icon?t=hPtbvHCMJfm9QMvX-1"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Sbiswas001?tab=repositories" class="btn">See more</a>
+        </div>
+    </div>
+    <!-----------contact-------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sbiswas001.tech@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Sbiswas001"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sbiswas001"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/sbiswas001"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/sbiswas2004"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="https://docs.google.com/document/d/16Humuj2QosE2mo4Z85ikWCDBlWFL8zBP_byFB0jfvAg/edit?usp=sharing"
+                        class="btn btn2">Checkout CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Sayan Biswas <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <button id="goToTopBtn" title="Go to top"><i class="fa-solid fa-up-long"></i></button>
+    <script src="sayanbiswas.js"></script>
 </body>
+
 </html>
