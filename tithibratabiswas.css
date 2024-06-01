@@ -1,0 +1,39 @@
+
+#body{
+    background:linear-gradient(rgb(200, 241, 250),rgb(162, 242, 162));
+    background-repeat: no-repeat;
+    background: position 20vh;;
+    border: 10px solid rgb(2, 68, 55);
+    border-style:double;
+}
+#demo{
+    color: black;
+    font-style: oblique;
+    text-align: center;
+}
+.dropdown{
+    color:black;
+    margin-left: 40px;
+    margin-right: auto;
+}
+#image{
+    display: block;
+    margin-left: 1200px;
+    margin-right: auto;
+    border-radius: 30px;
+    border: 10px solid white;
+}
+#rel{
+    height: fit-content;
+    width:800px;
+}
+.rem{
+    color:rgb(4, 61, 114);
+    text-align: center;
+    }
+.temp{
+    background-color: aliceblue;
+    font-style: italic;
+    width: fit-content;
+    cursor: pointer;
+}
