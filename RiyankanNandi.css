@@ -1,0 +1,172 @@
+
+#outerbox1{
+    width: 100%; 
+  height: 100%;
+    background-image: url("myphoto.png");
+    background-size: cover; 
+  background-position: center;
+
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+.mydiv{
+    color: white;
+    
+    display: inline-block;
+    
+}
+#innerbox1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    
+}
+#innerbox2{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration: underline;
+    
+}
+#innerbox3{
+    background-image: url("myphoto.png");
+    background-size: cover;
+    border-radius: 50%;
+    height: 200px;
+    width:200px;
+    display: inline-block;
+    position: relative;
+    top:250px;
+    left:250px;
+}
+.mydiv1{
+    position: relative;
+    left:500px;
+    top:175px;
+}
+#innerbox4{
+    font-size: 35px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#innerbox5{
+    font-size: 20px;
+   font-family: cursive;
+}
+#innerbox6{
+    position: relative;
+    left:500px;
+    top:100px;
+}
+.mydiv2{
+    position: relative;
+    left:350px;
+    top:250px;
+    height: 200px;
+    width:200px;
+    margin-right: 100px;
+    border-radius:50%;
+    color: black;
+    border: 2px solid black;
+    display: inline-block;
+    text-align: center; 
+    font-size: 25px;
+    line-height: 100px; 
+}
+#innerbox7 {
+    left: 50px;
+    background-color: aqua;
+}
+
+#innerbox8 {
+    left: 175px;
+    background-color: rgb(156, 237, 156);
+}
+
+#innerbox9 {
+    left: 250px;
+    background-color: rgb(176, 172, 172);
+}
+
+#innerbox10 {
+    background-color: rgb(194, 194, 87);
+    left: 320px;
+}
+
+ #outerbox2{
+    position: relative;
+    top:250px;
+    height:550px ;
+    width:100%;
+    background-image: url("Qualification.jpg");
+    background-size: cover;
+    text-align: center; 
+    font-size: 48px;
+    font-style: italic;
+    line-height: 100px;
+    text-decoration: underline;
+    background-position: center;
+} 
+.mydiv4{
+    position: relative;
+    left:50px;
+    top:175px;
+    font-size: 25px;
+    line-height: 15px;
+}
+#outerbox3{
+    position: relative;
+    top:250px;
+    height:550px ;
+    width:100%;
+    left: 0;
+    background-image: url("Learning.jpg");
+    background-size: cover;
+    text-align: center; 
+    font-size: 48px;
+    color: white;
+    font-style: italic;
+    line-height: 100px;
+    text-decoration: underline;
+    background-position: center;
+    background-color: rgba(221, 203, 203, 0);
+} 
+#outerbox4{
+    position: relative;
+    top:550px;
+    height:500px ;
+    width:100%;
+    left: 0;
+    background-image: url("interest.jpg");
+    background-size: cover;
+    text-align: center; 
+    font-size: 48px;
+    color: white;
+    font-style: italic;
+    line-height: 100px;
+    text-decoration: underline;
+    background-position: center;
+    background-color: rgba(221, 203, 203, 0);
+} 
+#outerbox5{
+    position: relative;
+    top:650px;
+    height:250px ;
+    width:100%;
+    left: 0;
+    background-image: url("contactUs.jpg");
+    background-size: cover;
+    text-align: center; 
+    font-size: 25px;
+    color: white;
+    font-style: italic;
+    line-height: 25px;
+    text-decoration: underline;
+    background-position: center;
+    background-color: rgba(221, 203, 203, 0);
+} 
+footer{
+    
+        background-color: black;
+        
+        text-align: center;
+        margin: 25px;
+        
+    
+}
