@@ -2,7 +2,7 @@
 #outerbox1{
     width: 100%; 
   height: 100%;
-    background-image: url("myphoto.png");
+    background-image: url("assets/images/riyankanandi/myphoto.png");
     background-size: cover; 
   background-position: center;
 
@@ -26,7 +26,7 @@
     
 }
 #innerbox3{
-    background-image: url("myphoto.png");
+    background-image: url("assets/images/riyankanandi/myphoto.png");
     background-size: cover;
     border-radius: 50%;
     height: 200px;
@@ -94,7 +94,7 @@
     top:250px;
     height:550px ;
     width:100%;
-    background-image: url("Qualification.jpg");
+    background-image: url("assets/images/riyankanandi/Qualification.jpg");
     background-size: cover;
     text-align: center; 
     font-size: 48px;
@@ -116,7 +116,7 @@
     height:550px ;
     width:100%;
     left: 0;
-    background-image: url("Learning.jpg");
+    background-image: url("assets/images/riyankanandi/Learning.jpg");
     background-size: cover;
     text-align: center; 
     font-size: 48px;
@@ -133,7 +133,7 @@
     height:500px ;
     width:100%;
     left: 0;
-    background-image: url("interest.jpg");
+    background-image: url("assets/images/riyankanandi/interest.jpg");
     background-size: cover;
     text-align: center; 
     font-size: 48px;
@@ -150,7 +150,7 @@
     height:250px ;
     width:100%;
     left: 0;
-    background-image: url("contactUs.jpg");
+    background-image: url("assets/images/riyankanandi/contactUs.jpg");
     background-size: cover;
     text-align: center; 
     font-size: 25px;
