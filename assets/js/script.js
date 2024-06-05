@@ -5,6 +5,7 @@ const entries = [
         github: "https://github.com/Sbiswas001",
         linkedin: "https://www.linkedin.com/in/sbiswas001",
     },
+    
     {
         name: "Arkapravo Roy",
         portfolio: "arkapravoroy.html",
@@ -16,6 +17,12 @@ const entries = [
         portfolio: "bidwattarkar.html",
         github: "https://github.com/Bidwattar98",
         linkedin: "https://www.linkedin.com/in/bidwattar-kar-963399289/",
+    },
+    {
+        name: "Md Danish Ansari",
+        portfolio: "danish.html",
+        github: "https://github.com/mddanish004",
+        linkedin: "https://www.linkedin.com/in/mddanish004/",
     },
     {
         name: "Riyanka Nandi",
@@ -73,9 +80,9 @@ entries.forEach((entry) => {
     const linkedinCell = document.createElement("td");
 
     nameCell.textContent = entry.name;
-    portfolioCell.innerHTML = entry.portfolio ? `<a href="${entry.portfolio}">Portfolio</a>` : 'N/A';
-    githubCell.innerHTML = entry.github ? `<a href="${entry.github}">Github</a>` : 'N/A';
-    linkedinCell.innerHTML = entry.linkedin ? `<a href="${entry.linkedin}">Linkedin</a>` : 'N/A';
+    portfolioCell.innerHTML = entry.portfolio ? `<a target="_blank" href="${entry.portfolio}">Portfolio</a>` : 'N/A';
+    githubCell.innerHTML = entry.github ? `<a target="_blank" href="${entry.github}">Github</a>` : 'N/A';
+    linkedinCell.innerHTML = entry.linkedin ? `<a target="_blank" href="${entry.linkedin}">Linkedin</a>` : 'N/A';
 
     row.appendChild(nameCell);
     row.appendChild(portfolioCell);
