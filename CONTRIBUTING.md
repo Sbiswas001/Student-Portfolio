@@ -1,9 +1,4 @@
-Sure, I'll help you draft the `CONTRIBUTING.md` file for your repository. Here it is:
-
----
-
-# Contributing to [Your Project Name]
-
+# Contributing to Student-Portfolio
 Thank you for considering contributing to our project! We are excited to have you participate in our Hacktoberfest event. Please follow the guidelines below to contribute your portfolio to the website.
 
 ## How to Contribute
@@ -71,7 +66,7 @@ Thank you for considering contributing to our project! We are excited to have yo
 
 ## Code of Conduct
 
-This project adheres to a [Code of Conduct](./CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [contact@example.com](mailto:contact@example.com).
+This project adheres to a [Code of Conduct](./CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [sbiswas001.tech@gmail.com](mailto:sbiswas001.tech@gmail.com).
 
 ## License
 
