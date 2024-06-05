@@ -4,7 +4,7 @@ body {
     padding: 20px;
     color: #ffffff;
     background-size: cover;
-    background-image: url(assets/images/indexbackground.jpg);
+    background-image: url(../images/indexbackground.jpg);
 }
 
 a {
