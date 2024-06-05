@@ -21,6 +21,7 @@ const entries = [
         name: "Riyanka Nandi",
         portfolio: "riyankanandi.html",
         github: "https://github.com/riyankanandi",
+        linkedin: "https://www.linkedin.com/in/riyanka-nandi-b16b64293/",
     },
     {
         name: "Rupankar Saha",

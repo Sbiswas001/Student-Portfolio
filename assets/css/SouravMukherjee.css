@@ -48,7 +48,7 @@ section {
 
 #about {
   position: relative; 
-  background: url('assets/images/SouravMukherjee/Background.jpg') no-repeat center center; 
+  background: url('../images/SouravMukherjee/Background.jpg') no-repeat center center; 
   background-size: cover; 
   color: #e0e0e0; 
   padding: 4rem 2rem;
