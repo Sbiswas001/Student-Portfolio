@@ -3,75 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="arkapravoroy.css">
-    <title>Arka's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/arkapravoroy.css">
+    <title>Arka - Developer Portfolio</title>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
-    <header id="btt"style="text-align: center;margin-bottom: 10dp; background-color:#000000;color:#ffffff">
-        <center>
-            <h1>Welcome to the HELL!</h1>
-            <h2>Created by Arkapravo Roy</h2><hr/>
+    <header id="navigation">
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#works">Achievements</a></li>
-            </ul>   
+            <div class="nametype" style="font-size: 2rem;color: red;"><i>
+               A<span style="color: white;">rka's Portfolio</span></i>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Work</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-    </center>
     </header>
-
-    <section id="hero" style="background-image: url('https://media.istockphoto.com/id/502860430/photo/hacker.jpg?s=612x612&w=0&k=20&c=1bmT7Z0lfbTKg1idvECUvVvncFnnKIwq0OmPrYeHoDw=');">
-        <div class="hero-content">
-            <h2>Discover the perfect blend</h2>
-            <p>Enjoy reading my profile</p>
-
-            <a href="#about" class="btn">About</a>
-        </div>
-    </section>
-
-    <section id="about" style="background-color: darkgrey;">
+    <hr>
+    <main>
+        <section id="home">
+        <div class="firstsec">
+        <section class="left">
+           <h1><b>Hello, it's me<br> <span style="color: aqua;">Arkapravo Roy</span><br>
+        From India</b></h1>
+        <p style="font-size: 30px;"><b>I am a passionate......</b><br>
+            <span id="element" style="color: aqua;"></span></p>
+            <button class="btn">Download CV</button>
+            <h3 class="enter"><a href="#about">let's enter to my portfolio...</a> </h3>
+        </section>
+        <section class="right">
+            <img src="assets/images/arkapravoroy/coder-png-coder-png-file-354.png">
+        </section>
+        
+    </div>
+</section>
+    <hr>
+<!---------------About--------------->
+    <div id="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>Welcome to the Hell!You are going to see my chapters now</p>
-            <p>My name is <b>Arkapravo Roy</b> and I'm from CoochBehar. I live in Kolkata now and currently persuing my BTech degree from G.C.E.C.T in CSE.</p>
-            <p>I'm very much interested in learning different programming languages and currently I'm learning C++ and next it will be followed by Java</p><br />
-
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/images/arkapravoroy/mypic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="aboutme">About Me</h1>
+                    <p class="about">Hi,I am Arkapravo Roy from Kolkata,West Bengal. I am a CSE student currently at 
+                        Government College of Engineering and Ceramic Technology located at Beleghata.I am currently learning C++,Python and will learn Java next.
+                        I am very eager to choose CyberSecurity as my domain and want to become a cyber analyst in future.
+                    </p>
+                    <h3 class="enter1"><a href="#works" style="text-decoration: none;color: aqua;">Click to move to next section</a></h3>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <section id="contact" style="background-color: bisque;">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit">Send</button>
-              </form>
+    </div>
+    <hr>
+<!---------------work--------------->
+    <div id="works">
+        <h1 class="heading">My Works</h1>
+        <div class="firstpart">
+            <div class="webd">
+                <h2>Web Development</h2>
+                <p>I have started my web development journey with building a website called "My coffee shop" iin sololearn 
+                    and it boosted my confidence to build this portfolio which will also help me in my future.
+                </p>
+                <center>
+                    <a href="#" style="text-decoration: none;color: aqua;">Learn More</a>
+                </center>
+            </div>
+            <div class="appd">
+                <h2>App Development</h2>
+                <p>I started this by building some small project apps which are login page,simple calculator and step tracker.
+                    This helped me to gain some knowledge about app development.
+                </p>
+                <center>
+                    <a href="#" style="text-decoration: none;color: aqua;">Learn More</a>
+                </center>
+            </div>
         </div>
-    </section>
-
-    <section id="works" style="background-color: burlywood;">
-        <div class="container">
-          <h2>Want to know my achievements?</h2>
-          <p>In the educational field:</p>
-          <p>Recieved 3 star badge in<b> Hackerrank</b></p>
-          <p>Gathered almost full knowledge of C</p>
-          <p>Recieved other prizes from the State Govt.</p><hr />
-          <h2>In other fields:</h2>
-          <p>Got a minimum of 20 medals and trophies in swimming</p>
-          <p>Played district level Badminton tournament</p>
-          <p>Played for CoochBehar in interdistrict Football tournament</p>
+        <div class="secondpart">
+            
+                <div class="cs">
+                    <h2>CyberSecurity</h2>
+                    <p>Currently I am in my initial phase of the Cybersecurity Journey as I am a complete beginner in this field. I want to persue this in my future and want to do my masters on it.
+                    </p>
+                    <center>
+                        <a href="#" style="text-decoration: none;color: aqua;">Learn More</a>
+                    </center>
+                </div>
+            
         </div>
-      </section>
-
-    <a href="#btt" class="back-to-top">Back to Top</a>
-
-    <footer style="background-color: rgb(12, 12, 12);color: azure;">
-        <p>created by Arkapravo Roy</p>
+        
+    </div>
+        <button class="btn1"><a href="#contact" style="text-decoration: none;color: aqua;">Next Section</a></button>
+    </div>
+    <hr style="margin-top: 30px;">
+<!-----------------contact--------------->
+    <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="sects">
+                <form>
+                    <input type="text"style="width: 70%;margin-bottom: 10px;" placeholder="Your Name" required><br>
+                    <input type="email"style="width: 70%;margin-bottom: 10px;" placeholder="Your Email" required><br>
+                    <textarea style="width: 70%;margin-bottom: 10px;" placeholder="Message" required></textarea><br>
+                    <center>
+                        <button type="submit" class="btn2" style="margin-top:20px;margin-bottom: 2rem;">Send</button><br>
+                    </center>
+                  </form>
+                  </div>
+            </div>
+        </section>
+    </div>
+    <br>
+    <a href="#navigation" class="back-to-top">Back to Top</a>
+    </main>
+    <footer class="foot">
+        <p>Created By Arkapravo Roy</p>
         <p>&copy;2024 The portfolio.All rights reserved</p>
     </footer>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer','Cybersecurity Enthusiast','Coder','Designer'],
+          typeSpeed: 50,
+        });
+      </script>
 </body>
 </html>
