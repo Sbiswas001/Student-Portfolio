@@ -1,7 +1,3 @@
-Sure, here is a draft for the `SECURITY.md` file for your GitHub repository:
-
----
-
 # Security Policy
 
 ## Supported Versions
