@@ -32,7 +32,7 @@ const entries = [
     },
     {
         name: "Rupankar Saha",
-        portfolio: "rupankar.html",
+        portfolio: "rupankarsaha.html",
         github: "https://github.com/Rupankarsaha",
         linkedin: "https://www.linkedin.com/in/rupankar-saha-036945294/",
     },
