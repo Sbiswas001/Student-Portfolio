@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #081b29;
+    color: aliceblue;
+}
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image:url(Protfolio-background.png) ;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+
+}
+.logo {
+    height: 150px;
+    width: 400px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 1px 20px;
+}
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+    
+}
+.header-text {
+    margin-top: 15%;
+    font-size: 20px;
+}
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h3 {
+    color: aqua;
+}
+/*----------------------------ABOUT SECTION-----------------*/
+#about {
+    padding: 80px 0;
+    
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.no2-image {
+    height: 500px;
+    width: 600px;
+}
+.div-col-1 {
+    flex-basis: 35%;
+}
+.div-col-1 {
+    width: 100%;
+    
+}
+.div-col-2 {
+    flex-basis: 59%;
+}
+.subtitle {
+    font-weight: 600;
+    color: aliceblue;
+    font-size: 50px;
+}
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links {
+    margin-right: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+
+.tab-links.active-link::after {
+    width: 70%;
+}
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;    
+}
+.tab-contents ul li span {
+    color: aqua;
+    font-size: 14px;
+}
+.tab-contents {
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/* -----------------services------------ */
+#services {
+    padding: 30px 0;
+}
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div {
+    background: #031736;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+
+}
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: aqua;
+    color: #081b29;
+    transform: translateY(-10px);
+}
+/* -------------------protfolio--------------- */
+
+#protfolio {
+    padding: 30 0;
+}
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s ;
+}
+.layer {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), aqua);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+}
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a {
+    margin-top: 20px;
+    color: aqua;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.2);
+}
+.button {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid aqua;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.3s;
+}
+.button:hover {
+    background-color: aqua ;
+    color: #081b29;
+}
+/* -------------------contact---------------- */
+.contact-left {
+    flex-basis: 35%;
+}
+.contact-right {
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: aqua;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons {
+    margin-top: 30px;
+}
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:aliceblue ;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+.social-icons a:hover {
+    color: aqua;
+    transform: translateY(-5px);
+}
+.button.button2 {
+    display: inline-block;
+    background: #081b29;
+}
+.button.button2:hover {
+    background-color: aqua;
+    color: #081b29;
+
+}
+.contact-right form {
+    width: 100%;
+}
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+}
+form .button2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+/* -----------------------css for small screens--------------- */
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image:url(protfolio-bg-small-screen.jpg);
+    }    
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1 {
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul {
+        background :aqua;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: .3s;
+    }
+    nav ul li {
+        display:block ;
+        margin: 25px;
+        
+    }
+    nav ul li .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .contact-left,.contact-right {
+        flex-basis:100% ;
+    }
+
+}
+#span {
+    color:coral;
+    margin-top: -1000px;
+    display: block;
+}
