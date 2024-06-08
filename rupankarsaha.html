@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rupankarsaha's Portfolio</title>
+    <link rel="icon" href="assets/images/rupankarsaha/phone-background.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/rupankarsaha.css">
+    <script src="https://kit.fontawesome.com/2c6faefed4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/images/rupankarsaha/logo.png" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Undergraduate Student</p>
+                <h1>Hi, I'm <span>Rupankar</span><br>saha from India</h1>
+            </div>
+        </div>
+    </div>
+    <!----------about--------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/images/rupankarsaha/image background.jpg" alt="Profile pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi there!
+
+                        I'm rupankar saha , an undergraduate student in Information Technology from India. My
+                        passion lies in software development, with a particular focus on c++ and data
+                        structures and algorithms (DSA). I love diving into code and exploring new technologies.
+                        <br><br>
+                        My interests extend to WEB development, and I enjoy collaborating on open-source
+                        projects. I actively contribute to my GitHub repositories and engage with the developer
+                        community on LinkedIn and other platforms. Connecting with other developers and sharing
+                        knowledge is something I find incredibly rewarding.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>App Development</span><br>Building Android apps</li>
+                            <li><span>Web Development</span><br>Designing Websites</li>
+                            <li><span>UI/UX</span><br>Designing app logos</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>STUDENT</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2027</span><br>B.Tech IT from GCECT Kolkata, CGPA - 8.3</li>
+                            <li><span>2023</span><br>Standard XII from BARAJAGULI GOPAL ACADEMY, Marks - 74%</li>
+                            <li><span>2021</span><br>Standard X from BARAJAGULI GOPAL ACADEMY , Marks - 85%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------services-------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>App Design</h2>
+                    <p>I have a proven track record of designing intuitive and visually appealing Android apps that
+                        enhance user experience. My expertise includes modern design principles, user-centric
+                        interfaces, and seamless functionality.</p>
+                    <a href="https://github.com/Rupankarsaha">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I specialize in creating modern, responsive websites that deliver exceptional user experiences
+                        across all devices. My designs focus on aesthetics, usability, and performance to ensure your
+                        online presence stands out.</p>
+                    <a href="https://github.com/Rupankarsaha/Student-Portfolio">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Logo Design</h2>
+                    <p>I craft distinctive and memorable logos that effectively capture and communicate your brand's
+                        identity. My designs blend creativity and strategic thinking to ensure your logo leaves a
+                        lasting impression.</p>
+                    <a href="https://www.figma.com/design/GDnOpovYFzfd2bcP53Wf3A/App-Icon?t=hPtbvHCMJfm9QMvX-1">Learn
+                        more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------portfolio---------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/images/rupankarsaha/work-1.png" alt="NumplexApp">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>This app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="https://github.com/Rupankarsaha/NumplexApp"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/sayanbiswas/website showcase.png" alt="NumplexApp">
+                    <div class="layer">
+                        <h3>College Website</h3>
+                        <p>A website for students of GCECT, Kolkata; batch of 2023.</p>
+                        <a href="https://github.com/Rupankarsaha/gcect-batch-2023"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/rupankarsaha/work-3.png" alt="NumplexApp">
+                    <div class="layer">
+                        <h3>App Icon</h3>
+                        <p>This is an app icon I designed for my app.</p>
+                        <a href="https://www.figma.com/design/GDnOpovYFzfd2bcP53Wf3A/App-Icon?t=hPtbvHCMJfm9QMvX-1"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Rupankarsaha?tab=repositories" class="btn">See more</a>
+        </div>
+    </div>
+    <!-----------contact-------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>saharupankar903@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Rupankarsaha"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rupankar-saha-036945294/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_rupankar_saha?igsh=MTlsa21nZ3QxdjhpOQ=="><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="assets/images/rupankarsaha/my-cv.pdf" Download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Rupankar saha <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <button id="goToTopBtn" title="Go to top"><i class="fa-solid fa-up-long"></i></button>
+    <script src="assets/js/rupankarsaha.js"></script>
+</body>
+
+</html>

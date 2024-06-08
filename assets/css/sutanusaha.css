@@ -1,0 +1,180 @@
+:root{
+    --primary-color: #29a598;
+    --text-color: #394c4a;
+    --background-light: #ffffff;
+    --header-height: 100vh;
+}
+*,*::before, *::after{
+    box-sizing:border-box;
+}
+html{
+    font-size: 110%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(151, 127, 131), rgba(42, 48, 131, 0.9));
+    font-family: 'Work Sans',Helvetica,sans-serif;
+    color: #394c4a;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+.header-background{
+    background: linear-gradient(rgba(11, 7, 3, 0.7), rgba(21, 21, 20, 0.9)), center center fixed;
+    background-size: cover;
+    text-align: center;
+    height: 50px;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:sticky;
+}
+header {
+    background: #191818;
+    color: #e0e0e0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #28bf9c;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    margin: 25px;
+}
+
+nav ul li a:hover {
+    color: #118b7d;;
+}
+
+.header-content img{
+    max-width: 250px;
+    border-radius: 50%;
+    margin: 30px;
+}
+.header-content h1, .header-content p{
+    margin: 0.5rem 0;
+    font-family: 'Unica One',cursive;
+}
+#home{
+    margin: 110px;
+}
+#about{
+    background-color: wheat;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    margin: 40px;
+    border-radius: 0.5%;
+    text-align: center;
+}
+.profile-photo{
+    max-width: 40%;
+    height: auto;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+}
+#portfolio .project {
+    background: #2a2a2a;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#portfolio .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.7);
+}
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact label {
+    margin-top: 1rem;
+    text-align: left;
+    color: #c5b9b9;
+}
+
+#contact input, #contact textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #333;
+    color: #e0e0e0;
+    width: 100%;
+    font-size: 1rem;
+}
+
+#contact input::placeholder, #contact textarea::placeholder {
+    color: #c5b9b9;
+}
+
+#contact button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: none;
+    background: rgb(0, 255, 179);
+    color: #240a0a;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact button:hover {
+    background: rgb(18, 171, 125);
+}
+footer{
+    background-color: #47479a;
+    text-align: center;
+    padding: 3px;
+    color: #c5b9b9;
+}
+h2 {
+    color: #333;
+    font-family: 'Unica One', cursive;
+    font-size: 2.3rem;
+}
+
+a {
+    color: #29a598;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #208479;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+  
+  .profile-photo {
+        width: 50%; 
+        margin: 0 auto; 
+    }
+}
