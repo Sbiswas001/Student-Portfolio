@@ -14,7 +14,7 @@ body{
 #header {
     width: 100%;
     height: 100vh;
-    background-image:url(Protfolio-background.png) ;
+    background-image:url(assests/images/Rudrajyoty/Protfolio-background.png) ;
     background-size: cover;
     background-position: center;
 }
@@ -324,7 +324,7 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 600px) {
     #header {
-        background-image:url(protfolio-bg-small-screen.jpg);
+        background-image:url(assests/images/Rudrajyoty/protfolio-bg-small-screen.jpg);
     }    
     .header-text {
         margin-top: 100%;
