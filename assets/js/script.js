@@ -1,18 +1,5 @@
 const entries = [
     {
-        name: "Yash Shrivastav",
-        portfolio: "https://yash-shrivastava.vercel.app/",
-        github: "https://github.com/kayashth1",
-        linkedin: "https://www.linkedin.com/in/kayashth1/",
-    },
-    {
-        name: "Sayan Biswas",
-        portfolio: "sayanbiswas.html",
-        github: "https://github.com/Sbiswas001",
-        linkedin: "https://www.linkedin.com/in/sbiswas001",
-    },
-    
-    {
         name: "Arkapravo Roy",
         portfolio: "arkapravoroy.html",
         github: "https://github.com/SilentAssasin10",
@@ -31,10 +18,34 @@ const entries = [
         linkedin: "https://www.linkedin.com/in/mddanish004/",
     },
     {
+        name: "Devanshu Borkar",
+        portfolio: "devanshu.html",
+        github: "https://github.com/DevanshuB211",
+        linkedin: "",
+    },
+    {
+        name: "Pratyay Roy",
+        portfolio: "pratyayroy.html",
+        github: "",
+        linkedin: "",
+    },
+    {
+        name: "Rajarshee Hazari",
+        portfolio: "rajarsheehazari.html",
+        github: "",
+        linkedin: "",
+    },
+    {
         name: "Riyanka Nandi",
         portfolio: "riyankanandi.html",
         github: "https://github.com/riyankanandi",
         linkedin: "https://www.linkedin.com/in/riyanka-nandi-b16b64293/",
+    },
+    {
+        name: "Rudrajyoty Mahata",
+        portfolio: "Rudrajyoti.html",
+        github: "",
+        linkedin: "",
     },
     {
         name: "Rupankar Saha",
@@ -46,11 +57,31 @@ const entries = [
         name: "Saurya Sharma",
         portfolio: "sauryasharma.html",
         github: "https://github.com/StormyShu",
+        linkedin: "",
+    },
+    {
+        name: "Sayan Biswas",
+        portfolio: "sayanbiswas.html",
+        github: "https://github.com/Sbiswas001",
+        linkedin: "https://www.linkedin.com/in/sbiswas001/",
     },
     {
         name: "Sayan Guha",
         portfolio: "sayanguha.html",
         github: "https://github.com/SayanGuha04",
+        linkedin: "",
+    },
+    {
+        name: "Shreyash",
+        portfolio: "Shreyash.html",
+        github: "",
+        linkedin: "",
+    },
+    {
+        name: "Siddharth",
+        portfolio: "Siddharth.html",
+        github: "",
+        linkedin: "",
     },
     {
         name: "Soham Banik",
@@ -64,6 +95,12 @@ const entries = [
         linkedin: "https://www.linkedin.com/in/sourav-mukherjee-892447301/",
     },
     {
+        name: "Subhadaya",
+        portfolio: "subhadaya.html",
+        github: "",
+        linkedin: "",
+    },
+    {
         name: "Sutanu Saha",
         portfolio: "sutanusaha.html",
         github: "https://github.com/sutanusaha1920",
@@ -74,7 +111,14 @@ const entries = [
         portfolio: "tithibratabiswas.html",
         github: "https://github.com/T1050",
     },
+    {
+        name: "Yash Shrivastav",
+        portfolio: "https://yash-shrivastava.vercel.app/",
+        github: "https://github.com/kayashth1",
+        linkedin: "https://www.linkedin.com/in/kayashth1/",
+    },
 ];
+
 
 const tbody = document.getElementById("table-body");
 

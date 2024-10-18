@@ -23,8 +23,10 @@ This project is a basic HTML website template designed to help you create your f
 ## Structure
 
 - `index.html`: The main page of the portfolio.
-- `assets/`: Directory containing images and other assets.
-- `styles/`: Directory containing CSS files.
+- `assets/`: Directory containing css, images, js and other assets.
+- `assets/css`: Directory containing CSS files.
+- `assets/images`: Directory containing image files.
+- `assets/js`: Directory containing JS files.
 
 ## Contributing
 

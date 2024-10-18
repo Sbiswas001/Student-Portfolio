@@ -47,18 +47,30 @@ Thank you for considering contributing to our project! We are excited to have yo
    </html>
    ```
 
-7. **Commit your changes**
+7. **Link your HTML file in assets/js/script.js file**
+   ```
+   const entries = [
+      {
+        name: "",
+        portfolio: "",
+        github: "",
+        linkedin: "",
+    },
+   ]
+   ```
+
+8. **Commit your changes**
    ```bash
    git add .
    git commit -m "Added portfolio for Your Name"
    ```
 
-8. **Push your branch to your forked repository**
+9. **Push your branch to your forked repository**
    ```bash
    git push origin your-branch-name
    ```
 
-9. **Create a Pull Request**
+10. **Create a Pull Request**
    - Go to the original repository on GitHub.
    - Click the "Compare & pull request" button.
    - Provide a meaningful description of your changes.
