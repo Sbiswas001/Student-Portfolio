@@ -1,5 +1,11 @@
 const entries = [
     {
+        name: "Yash Shrivastav",
+        portfolio: "https://yash-shrivastava.vercel.app/",
+        github: "https://github.com/kayashth1",
+        linkedin: "https://www.linkedin.com/in/kayashth1/",
+    },
+    {
         name: "Sayan Biswas",
         portfolio: "sayanbiswas.html",
         github: "https://github.com/Sbiswas001",
