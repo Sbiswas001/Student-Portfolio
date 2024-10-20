@@ -123,6 +123,12 @@ const entries = [
     github: "https://github.com/allanoguis",
     linkedin: "https://www.linkedin.com/in/allanoguis/",
   },
+  {
+    name: "Bhavishya Garg",
+    portfolio: "https://bhavishyagarg.vercel.app/",
+    github: "https://github.com/bhavishya2601",
+    linkedin: "https://www.linkedin.com/in/bhavishya2601/",
+  },
 ];
 
 const tbody = document.getElementById("table-body");
