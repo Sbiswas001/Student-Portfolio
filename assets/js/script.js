@@ -1,5 +1,11 @@
 const entries = [
   {
+    name: "Gyanajyoti Mishra",
+    portfolio: "gyanajyotimishra.html",
+    github: "https://github.com/Geeky-Gyan",
+    linkedin: "https://www.linkedin.com/in/gyanajyoti-mishra-a3844526b",
+  },
+  {
     name: "Arkapravo Roy",
     portfolio: "arkapravoroy.html",
     github: "https://github.com/SilentAssasin10",

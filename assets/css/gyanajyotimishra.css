@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --primary-color: #3498db;
+    --card-bg-color: #f4f4f4; /* Background for cards */
+    --modal-bg-color: #fff; /* Background for modal */
+    --skill-bg-color: #f4f4f4;
+    --hero-text-color: #333; /* Light mode hero text color */
+}
+
+.dark-theme {
+    --bg-color: #333;
+    --text-color: #ffffff;
+    --primary-color: #2980b9;
+    --card-bg-color: #444; /* Dark mode card background */
+    --modal-bg-color: #555; /* Dark mode modal background */
+    --skill-bg-color: #444; /* Dark mode skill background */
+    --hero-text-color: #ffffff; /* Dark mode hero text color */
+}
+
+h1, h2, h3, p {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Hero Section */
+#hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--hero-text-color); /* Use hero text color variable */
+}
+
+.hero-title {
+    color: var(--hero-text-color); /* Ensure the hero title uses the hero text color */
+} 
+
+.btn {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Skills Section */
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    background-color: var(--skill-bg-color);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+/* Projects Section */
+.project-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: var(--card-bg-color);
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+/* Modals */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background: var(--modal-bg-color);
+    color: var(--text-color);
+    margin: 100px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.close {
+    float: right;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}  
