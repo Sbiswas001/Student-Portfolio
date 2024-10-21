@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4f12e52d25.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .subtitle {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+#contact{
+    background-color: #555;
+    color: #ddd;
+}
+
+
+#contact h1 {
+    margin-right: -850px;
+    margin-bottom: 10px;
+}
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .header-text {
+            text-align: center;
+            padding: 100px 0;
+            background-color: #f4f4f4;
+        }
+        .header-text h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        .header-text h3 {
+            color: #555;
+        }
+        #about, #services, #portfolio, #contact {
+            padding: 50px 20px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        .tab-titles {
+            display: flex;
+            justify-content: center;
+        }
+        .tab-titles p {
+            margin: 0 20px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #555;
+        }
+        .tab-contents {
+            display: none;
+            text-align: center;
+        }
+        .active-tab {
+            display: block;
+        }
+        .skills, .experience, .education ul {
+            list-style: none;
+            padding: 0;
+        }
+        .services-list, .work-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .services-list div, .work {
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            width: 250px;
+            text-align: center;
+        }
+        .work img {
+            width: 100%;
+        }
+        .contact-left, .contact-right {
+            padding: 20px;
+            width: 45%;
+        }
+        form input, form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #333;
+            font-size: 1.5em;
+        }
+        .copyright {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+           <img src="./assets/images/Rudrajyoty/protfolio-logo-fotor-bg-remover-2024060311192.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#contact">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <h1>Hi, I am Siddharth Joshi</h1>
+            <h3>AI & Web Developer</h3>
+            <p>I am pursuing B.Tech in Computer Science Engineering with specialization in Artificial Intelligence and Machine Learning.<br> I am passionate about AI, ML, and Web Development.</p>
+        </div>
+    </div>
+</div>
+
+<!------------------------------------ABOUT SECTION----------------------------------------------------->
+<div id="contac">
+    <div class="container">
+        <div class="row">
+            <div class="div-col-2">
+                <h1 class="subtitle">About me</h1>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>AI/ML</span><br>Developing Machine Learning models</li>
+                        <li><span>Web Development</span><br>Building modern web applications</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024</span><br>Project work in AI & Web Development</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-Present</span><br>B.Tech CSE AI & ML from Uttarakhand Technical University</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------------------------SERVICES SECTION--------------------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+           <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Designing responsive and modern websites.</p>
+            <a href="#">Learn more</a>
+           </div>
+
+           <div>
+            <i class="fa-brands fa-uikit"></i>
+            <h2>UI/UX Design</h2>
+            <p>Creating user-friendly interfaces and experiences.</p>
+            <a href="#">Learn more</a>
+           </div>
+
+           <div>
+            <i class="fa-solid fa-brain"></i>
+            <h2>AI/ML Projects</h2>
+            <p>Developing AI-driven solutions for real-world problems.</p>
+            <a href="#">Learn more</a>
+           </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------PORTFOLIO SECTION---------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="./assets/images/Rudrajyoty/work-1.png">
+                <div class="layer">
+                    <h3>AI-based Social Media App</h3>
+                    <p>Connecting people through AI-driven recommendations.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="./assets/images/Rudrajyoty/work-2.png">
+                <div class="layer">
+                    <h3>E-commerce App</h3>
+                    <p>Offering seamless online shopping experience.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="./assets/images/Rudrajyoty/work-3.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>AI-powered music recommendation platform.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#" class="button">See more</a>
+
+    </div>
+</div>
+
+<!-- --------------CONTACT SECTION---------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact me</h1>
+                <p><i class="fa-solid fa-at"></i>siddharthjoshi@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 1234567890</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="#" download="button" class="button button2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="button button2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Siddharth Joshi</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = '0'
+    }
+    function closemenu(){
+        sidemenu.style.right = '-200px'
+    }
+</script>
+
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbztyvoqVgyFSfBx8KM04J1MdisP308LcG-bs01IrI0elpcf_uvk19dlN3NIwLCOSrd4sg/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML ="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
