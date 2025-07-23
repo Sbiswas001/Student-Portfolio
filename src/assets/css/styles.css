@@ -1,0 +1,123 @@
+/* Reset and base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px 20px;
+  background-image: url(../images/indexbackground.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* Table Container */
+.styled-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Table */
+.styled-table {
+  width: 90%;
+  max-width: 1200px;
+  border-collapse: collapse;
+  background-color: rgba(30, 30, 30, 0.85);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+}
+
+/* Headers */
+.styled-table thead tr {
+  background-color: #1f1f1f;
+  color: #ffcc00;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Table cells */
+.styled-table th,
+.styled-table td {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #444;
+}
+
+/* Alternating row colors */
+.styled-table tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Row hover effect */
+.styled-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+/* Links */
+a {
+  color: #00e676;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .styled-table th, .styled-table td {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .styled-table, .styled-table thead, .styled-table tbody, .styled-table th, .styled-table td, .styled-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .styled-table thead {
+    display: none;
+  }
+
+  .styled-table tr {
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .styled-table td {
+    text-align: left;
+    padding: 10px;
+    position: relative;
+  }
+
+  .styled-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #ffcc00;
+  }
+}

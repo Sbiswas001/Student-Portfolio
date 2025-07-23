@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/assets/css/styles.css" />
+    <title>Hacktoberfest Portfolio Showcase</title>
+  </head>
+  <body>
+    <h1>🎉 Hacktoberfest Portfolio Showcase</h1>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Portfolio Showcase</title>
-</head>
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Portfolio</th>
+          <th>GitHub</th>
+          <th>LinkedIn</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <!-- Populated dynamically by contributors.js -->
+      </tbody>
+    </table>
 
-<body>
-    <h1>Portfolio Showcase</h1>
-    <section>
-        <table class="styled-table">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Portfolio</th>
-                    <th>Github</th>
-                    <th>Linkedin</th>
-                </tr>
-            </thead>
-            <tbody id="table-body">
-            </tbody>
-        </table>
-    </section>
-
-    <script src="assets/js/script.js"></script>
-</body>
-
+    <script src="src/assets/js/contributors.js"></script>
+  </body>
 </html>

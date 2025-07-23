@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="name" content="Sayan Guha" />
+    <meta name="github" content="https://github.com/SayanGuha04" />
+    <meta name="linkedin" content="" />
+    <title>Sayan's Portfolio</title>
+    <link rel="stylesheet" href="../SayanGuha/SayanGuha.css" />
+    <script src="../SayanGuha/SayanGuha.js"></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sayan Guha</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sayan Guha</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#expericnce" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section_pic-container">
+        <img
+          src="https://img.freepik.com/free-vector/hacker-operating-laptop-cartoon-icon-
+            illustration-technology-icon-concept-isolated-flat-cartoon-style_138676-2387.jpg?
+            w=826&t=st=1717342109~exp=1717342709~hmac=ea51af403979dd1d8f9f8f8e2969a5a3fe8b83a23d1086a50b2c472ba381cb0b"
+          alt="Sayan Guha progile picture"
+        />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Sayan Guha</h1>
+        <p class="section_text_p2"><span id="element"></span></p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="https://static-00.iconduck.com/assets.00/linkedin-with-circle-icon-512x512-cvyrro5n.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/SayanGuha04'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section_text_p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img
+            src="https://media.licdn.com/dms/image/D4D22AQH5f-BIj18CSQ/feedshare-shrink_2048_1536/0/1698484049701?e=2147483647&v=beta&t=b0ShKt1JaXrzJxAbXj_0qqsbfvEiBQHlEybRHKmzvF4"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="https://pic.onlinewebfonts.com/thumbnails/icons_221388.svg"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>4+ years <br />Java Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Ky3DC21ccQFmK-RDuFX_010GWoyDR7mvj2Xx6ZxbEdmM_olFQK-3l52JJMbAAftvrD0&usqp=CAU"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech in Computer Science<br />Higher Secondary</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a dedicated Computer Science student at GECET, Kolkata,
+              currently in my 2nd year. My passion for technology and
+              development drives me to continually learn and grow both
+              academically and personally.During my coding journey, I've gained
+              a solid foundation in HTML, CSS, JavaScript, Java, and Android
+              Development and I've had the opportunity to work on various
+              projects that have helped me apply my knowledge in real-world
+              scenarios. I'm particularly interested in Android Development, and
+              I'm excited to explore this area further in my future studies and
+              career. When I'm not coding, you can find me designing, taking
+              photos, or learning new languages, which helps me stay creative
+              and motivated. I'm always looking for opportunities to expand my
+              horizons, whether through internships, research projects, or
+              collaborative work. Feel free to reach out if you'd like to
+              connect or discuss potential opportunities. Let's make a positive
+              impact together!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Double_angle_up_font_awesome.svg/1200px-Double_angle_up_font_awesome.svg.png"
+        alt="Arrow icon"
+        class="icon arrowu"
+        onclick="location.href='#desktop-nav'"
+      />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Double_angle_down_font_awesome.svg/768px-Double_angle_down_font_awesome.svg.png"
+        alt="Arrow icon"
+        class="icon arrowd"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section_text_p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/9775/9775831.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/9775/9775831.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/9775/9775831.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/9775/9775831.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Android Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/9775/9775831.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/9775/9775831.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kotlin</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/9775/9775831.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Firebase</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Double_angle_up_font_awesome.svg/1200px-Double_angle_up_font_awesome.svg.png"
+        alt="Arrow icon"
+        class="icon arrowu"
+        onclick="location.href='#about'"
+      />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Double_angle_down_font_awesome.svg/768px-Double_angle_down_font_awesome.svg.png"
+        alt="Arrow icon"
+        class="icon arrowd"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section_text_p1"></p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Numplex App</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SayanGuha04/NumplexApp'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SayanGuha04/NumplexApp'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://www.cdmi.in/courses@2x/web-developments.webp"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Student Portfolio
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SayanGuha04/Student-Portfolio'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SayanGuha04/Student-Portfolio'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://contentstatic.techgig.com/photo/90078629.cms"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SayanGuha04'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SayanGuha04'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Double_angle_up_font_awesome.svg/1200px-Double_angle_up_font_awesome.svg.png"
+        alt="Arrow icon"
+        class="icon arrowu"
+        onclick="location.href='#experience'"
+      />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Double_angle_down_font_awesome.svg/768px-Double_angle_down_font_awesome.svg.png"
+        alt="Arrow icon"
+        class="icon arrowd"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section_text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="https://icons.veryicon.com/png/o/internet--web/billion-square-cloud/mail-213.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:sayanguha2004@gmail.com">Email Me</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="nav-top">
+            <li><a href="#desktop-nav">Top</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Sayan Guha. All Rights Reserved.</p>
+    </footer>
+    <script src="/assets/js/sayanguha.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Android Developer",
+          "Web Developer",
+          "Android Developer",
+          "Web Developer",
+          "Android Developer",
+          "Web Developer",
+          "Android Developer",
+          "Web Developer",
+          "Android Developer",
+          "Web Developer",
+          "Android Developer",
+        ],
+        typeSpeed: 100,
+      });
+    </script>
+  </body>
+</html>
