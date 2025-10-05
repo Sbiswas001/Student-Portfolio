@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="name" content="Mirko Schubert" />
+    <meta name="github" content="https://github.com/mirkoschubert" />
+    <meta name="linkedin" content="https://www.linkedin.com/in/mirkoschubert/" />
+    <title>Mirko Schubert - Terminal Portfolio</title>
+    <link rel="stylesheet" href="MirkoSchubert.css">
+</head>
+<body>
+    <div class="crt">
+        <div class="scanlines"></div>
+
+        <!-- Boot Screen -->
+        <div id="boot-screen" class="boot-screen">
+            <div id="boot-output"></div>
+        </div>
+
+        <!-- TUI Interface (hidden initially) -->
+        <div id="tui" class="tui" style="display: none;">
+            <!-- Top Menu Bar -->
+            <div class="menu-bar">
+                <span class="menu-item active" data-section="about">1 About</span>
+                <span class="menu-item" data-section="skills">2 Skills</span>
+                <span class="menu-item" data-section="projects">3 Projects</span>
+                <span class="menu-item" data-section="contact">4 Contact</span>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="content-area">
+                <div id="content"></div>
+            </div>
+
+            <!-- Bottom Status Bar -->
+            <div class="status-bar">
+                <span class="status-left">DOORS OS v1.0.0</span>
+                <span class="status-right">1-4: Navigate | Arrow Keys: Switch | Q: Quit</span>
+            </div>
+        </div>
+    </div>
+    <script src="MirkoSchubert.js"></script>
+</body>
+</html>
