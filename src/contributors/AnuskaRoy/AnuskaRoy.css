@@ -1,0 +1,492 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #ffffff;
+    --background-color: #eeeff1;
+    font-size: 17px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+nav {
+    background-color: #90e0ef;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3.125rem;
+    height: 13vh;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: 300;
+}
+
+nav .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+nav .right a {
+    color: var(--text-color);
+    font-size: 1rem;
+    margin: 0 0.625rem;
+}
+
+nav .right a:hover {
+    color: var(--link-color);
+    transition: color 0.3s ease-in-out;
+}
+
+.headshot {
+    display: flex;
+}
+
+.headshot img:hover {
+    transform: scale(1.05);
+}
+
+.headshot img {
+    width: 4.2rem;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, color 0.3s;
+}
+
+section {
+    padding: 8rem 2rem;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+section:nth-of-type(odd) {
+    background-color: #caf0f8;
+}
+
+section:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+section h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: #0077b6;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+#about-section {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    margin-top: 3rem;
+}
+
+#about-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#about-section .bio {
+    padding: 0 2rem;
+    max-width: 56.25rem;
+}
+
+#about-section .bio p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+#about-section .social-links {
+    font-size: 2.25rem;
+}
+
+#about-section .social-links a {
+    padding: 0;
+    margin: 0 0.75rem;
+}
+
+#about-section .social-links a i {
+    transition: transform 0.3s, color 0.3s;
+}
+
+#about-section .social-links a:hover i {
+    color: #03045e;
+    transform: scale(1.2);
+}
+
+#about-section .social-links i {
+    color: #0077b6;
+    font-weight: 500;
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.resume-btn {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: #0077b6;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 10rem;
+  transition: background 0.3s, transform 0.3s;
+}
+.resume-btn:hover {
+  background-color: #03045e;
+  transform: scale(1.05);
+}
+
+#projects-section {
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 0;
+}
+
+#projects-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.projects-scroll-container {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 1600px;
+    overflow-x: auto;
+    margin: 0;
+}
+
+.project-box {
+    flex: 0 0 16rem;
+    text-align: center;
+    border: 1px solid #d7dbd8;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-box img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-box h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.project-box h5 {
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
+.project-box p {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: #494a4a;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#skills-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+#skills-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+#skills-section .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+}
+
+#skills-section i {
+    font-size: 3rem;
+    color: #0077b6;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 1rem 0;
+}
+
+#skill-img {
+    height: 3rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 1rem 0;
+}
+
+#skills-section i:hover, #skills-section img:hover {
+    transform: scale(1.2);
+}
+
+.skill {
+    font-weight: 100;
+}
+
+#achievements-section {
+    width: 100%;
+    margin: auto;
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 0;
+}
+
+#achievements-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.achievements-scroll-container {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 1600px;
+    overflow-x: auto;
+    margin: 0;
+}
+
+.achievement-box {
+    text-align: center;
+    border: 1px solid #d7dbd8;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.achievement-box img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.achievement-box h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.achievement-box p {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: #494a4a;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #caf0f8;
+    color: #000000;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+    nav .left a {
+        font-size: 1.25rem;
+    }
+
+    nav .right a {
+        font-size: 1rem;
+        margin: 0 0.5rem;
+    }
+
+    #about-section .headshot img {
+        width: 18rem;
+    }
+
+    #projects-section .project-box {
+        flex: 0 0 14rem;
+    }
+
+    #skills-section i {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .left a {
+        font-size: 1.25rem;
+    }
+
+    nav .right a {
+        font-size: 1.1rem;
+        margin: 0 0.375rem;
+    }
+
+    #about-section .headshot img {
+        width: 16rem;
+    }
+
+    #projects-section .project-box {
+        flex: 0 0 14rem;
+    }
+
+    #skills-section i {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        padding: 0 1rem;
+    }
+
+    nav .left a {
+        font-size: 1.1rem;
+    }
+
+    nav .right a {
+        font-size: 0.8rem;
+        margin: 0 0.25rem;
+    }
+
+    #about-section .social-links {
+        font-size: 1.75rem;
+    }
+
+    #about-section h2 {
+        font-size: 2.4rem;
+    }
+
+    #about-section .headshot img {
+        width: 12rem;
+    }
+
+    #projects-section .project-box {
+        flex: 0 0 14rem;
+    }
+
+    #skills-section i {
+        font-size: 1.5rem;
+    }
+
+    #skills-section .skills-container {
+       gap: 1.25rem;
+    }
+
+    section {
+        padding: 6rem 1rem;
+    }
+
+    #projects-section {
+        padding: 6rem 1rem;
+    }
+
+    #achievements-section {
+        padding: 6rem 1rem;
+    }
+}
