@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon.png" />
+    <meta name="name" content="Shubhodeep Mondal" />
+    <meta name="github" content="https://github.com/Spidy394" />
+    <meta name="linkedin" content="https://www.linkedin.com/in/shubho-deep/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shubhodeep | Portfolio</title>
+    <link rel="stylesheet" href="ShubhodeepMondal.css" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+      <div class="loading-text">
+        <span id="typewriter-loading"></span>
+        <span class="cursor">|</span>
+      </div>
+      <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content">
+      <!-- Navigation -->
+      <nav id="navbar" class="navbar">
+        <div class="container">
+          <div class="nav-content">
+            <a href="#home" class="logo" id="logo-link">
+              <span class="logo-main">spidy</span>
+              <span class="logo-dev">.dev</span>
+            </a>
+            <button
+              id="mobile-menu-toggle"
+              class="mobile-menu-toggle"
+              aria-label="Toggle menu"
+            >
+              <span class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </button>
+            <div class="desktop-nav">
+              <a href="#home" class="nav-link" data-section="home">
+                <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+                  />
+                </svg>
+                home
+              </a>
+              <a href="#about" class="nav-link" data-section="about">
+                <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                about
+              </a>
+              <a href="#projects" class="nav-link" data-section="projects">
+                <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"
+                  />
+                </svg>
+                projects
+              </a>
+              <a href="#contact" class="nav-link" data-section="contact">
+                <svg class="nav-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                  />
+                  <path
+                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                  />
+                </svg>
+                contact
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-menu">
+        <button
+          id="mobile-menu-close"
+          class="mobile-menu-close"
+          aria-label="Close Menu"
+        >
+          <svg viewBox="0 0 20 20" fill="currentColor">
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+        <div class="mobile-menu-links">
+          <a href="#home" class="mobile-nav-link" data-section="home">
+            <svg
+              class="mobile-nav-icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+              />
+            </svg>
+            Home
+          </a>
+          <a href="#about" class="mobile-nav-link" data-section="about">
+            <svg
+              class="mobile-nav-icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            About
+          </a>
+          <a href="#projects" class="mobile-nav-link" data-section="projects">
+            <svg
+              class="mobile-nav-icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"
+              />
+            </svg>
+            Projects
+          </a>
+          <a href="#contact" class="mobile-nav-link" data-section="contact">
+            <svg
+              class="mobile-nav-icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+              />
+              <path
+                d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+              />
+            </svg>
+            Contact
+          </a>
+        </div>
+      </div>
+
+      <!-- Home Section -->
+      <section id="home" class="section home-section">
+        <div class="reveal">
+          <div class="container">
+            <h1 class="home-title">
+              Hi, I'm
+              <span class="name-container">
+                <span id="typewriter-name" class="typewriter-name"></span>
+                <span class="typewriter-cursor">|</span>
+              </span>
+            </h1>
+            <p class="home-description">
+              A passionate developer with expertise in building scalable
+              applications and crafting innovative solutions.
+            </p>
+            <div class="home-buttons">
+              <a
+                href="#projects"
+                class="btn btn-primary"
+                data-section="projects"
+              >
+                <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                View Projects
+              </a>
+              <a
+                href="#contact"
+                class="btn btn-secondary"
+                data-section="contact"
+              >
+                <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                  />
+                  <path
+                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                  />
+                </svg>
+                Contact Me
+              </a>
+              <a
+                href="https://drive.google.com/file/d/17EVWkguyNa9NgJS3nzu3wxRGV50l_6Sq/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline"
+              >
+                <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Download Resume
+              </a>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://github.com/Spidy394"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link github"
+                aria-label="GitHub Profile"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/shubho-deep"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link linkedin"
+                aria-label="LinkedIn Profile"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://x.com/shubho_deep_09"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link twitter"
+                aria-label="Twitter Profile"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section about-section">
+        <div class="reveal">
+          <div class="container">
+            <h2 class="section-title">About me</h2>
+
+            <div class="about-content">
+              <p class="about-description">
+                A full-stack developer passionate about building scalable,
+                efficient solutions. Skilled in frontend technologies with
+                growing backend expertise, I write clean, maintainable code for
+                seamless user experiences. Always learning and exploring new
+                technologies to create impactful applications.
+              </p>
+
+              <div class="skills-grid" id="skills-grid">
+                <!-- Skills will be dynamically generated by JavaScript -->
+              </div>
+
+              <div class="about-cards">
+                <div class="about-card education-card">
+                  <h3 class="card-title">
+                    <span class="card-emoji">🏫</span>
+                    Education
+                  </h3>
+                  <div class="card-content">
+                    <div class="degree">
+                      <h4>B.Tech in Information Technology</h4>
+                      <p class="college">
+                        Govt. Collage of Engineering and Ceramic Technology
+                      </p>
+                      <p class="year">2024 - Present</p>
+                    </div>
+                    <div class="coursework">
+                      <h5>Relevant Coursework:</h5>
+                      <div class="course-tags">
+                        <span class="course-tag"
+                          >Data Structures and Algorithms</span
+                        >
+                        <span class="course-tag">Web Development</span>
+                        <span class="course-tag">Cloud Computing</span>
+                        <span class="course-tag">Software Engineering</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="about-card experience-card">
+                  <h3 class="card-title">
+                    <span class="card-emoji">💼</span>
+                    Work Experience
+                  </h3>
+                  <div class="card-content">
+                    <div class="experience-placeholder">
+                      <div class="placeholder-emoji">🚀</div>
+                      <h4>Ready for New Opportunities</h4>
+                      <p class="experience-text">
+                        Currently seeking internships and entry-level positions
+                      </p>
+                      <p class="experience-detail">
+                        Open to full-stack development, frontend, or backend
+                        roles where I can contribute my skills and continue
+                        learning.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section projects-section">
+        <div class="reveal">
+          <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-masonry" id="projects-container">
+              <!-- Projects will be dynamically generated by JavaScript -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact-section">
+        <div class="reveal">
+          <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+              <div class="contact-info">
+                <h3 class="contact-title">
+                  <svg
+                    class="contact-icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"
+                    />
+                  </svg>
+                  Let's Connect
+                </h3>
+                <p class="contact-description">
+                  Feel free to reach out to me for any inquiries, collaboration
+                  opportunities, or just to say hello!
+                </p>
+                <p class="contact-description">
+                  I'm always open to discussing new projects, creative ideas, or
+                  opportunities to be part of your visions.
+                </p>
+                <div class="contact-features">
+                  <div class="contact-feature">
+                    <div class="feature-icon">📧</div>
+                    <span>Quick response guaranteed</span>
+                  </div>
+                  <div class="contact-feature">
+                    <div class="feature-icon">🤝</div>
+                    <span>Open to collaboration</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-form-container">
+                <form id="contact-form" class="contact-form">
+                  <div class="form-group">
+                    <div class="input-icon">
+                      <svg viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      placeholder="Your Name..."
+                    />
+                  </div>
+                  <div class="form-group">
+                    <div class="input-icon">
+                      <svg viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                          d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                        />
+                        <path
+                          d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                        />
+                      </svg>
+                    </div>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      placeholder="youremail@gmail.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <div class="input-icon textarea-icon">
+                      <svg viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                          fill-rule="evenodd"
+                          d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="5"
+                      required
+                      placeholder="Your Message..."
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary submit-btn">
+                    <svg
+                      class="btn-icon send-icon"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"
+                      />
+                    </svg>
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        Shubhodeep Mondal © 2025. All rights reserved.
+      </footer>
+    </div>
+
+    <script src="ShubhodeepMondal.js"></script>
+  </body>
+</html>
