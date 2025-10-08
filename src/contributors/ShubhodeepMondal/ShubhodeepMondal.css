@@ -847,31 +847,20 @@ p {
   background: linear-gradient(to right, #3b82f6, #06b6d4);
   color: white;
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-primary:hover {
   background: linear-gradient(to right, #06b6d4, #3b82f6);
   box-shadow: 0 12px 35px rgba(59, 130, 246, 0.5);
   color: white;
+  transform: translateY(-2px);
 }
 
-.btn-primary::after {
-  content: "";
-  position: absolute;
-  top: -0.25rem;
-  left: -0.25rem;
-  right: -0.25rem;
-  bottom: -0.25rem;
-  background: linear-gradient(to right, #3b82f6, #06b6d4);
-  border-radius: 0.5rem;
-  filter: blur(4px);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: -10;
-}
-
-.btn-primary:hover::after {
-  opacity: 0.5;
+.btn-primary > * {
+  position: relative;
+  z-index: 2;
 }
 
 .btn-secondary {
@@ -1921,11 +1910,11 @@ p {
   width: 1.125rem;
   height: 1.125rem;
   transition: all 0.3s ease;
-  transform: rotate(-45deg);
+  transform: rotate(0deg);
 }
 
 .submit-btn:hover .send-icon {
-  transform: rotate(-45deg) scale(1.1) translateX(4px);
+  transform: rotate(15deg) scale(1.1) translateX(4px);
 }
 
 /* Footer */
