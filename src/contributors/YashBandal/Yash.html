@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yash Bandal — Full-Stack Developer · DevOps · DSA</title>
+  <meta name="description" content="Portfolio of Yash Bandal — Full-Stack Developer, Devops, DSA." />
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="./Yash.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">YB</div>
+        <div class="title">
+          <h1>Yash Bandal</h1>
+          <p>Full-Stack Developer · DevOps · DSA</p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <a class="btn" href="resume.pdf" download aria-label="Download resume">Resume</a>
+        <!-- <button id="themeToggle" class="btn ghost" title="Toggle theme" aria-pressed="false">Theme</button> -->
+      </div>
+    </header>
+
+    <main>
+      <!-- LEFT column -->
+      <section>
+        <article class="card hero" aria-labelledby="intro">
+          <div class="avatar" role="img" aria-label="Yash Bandal initials">YB</div>
+          <div class="bio">
+            <h2 id="intro">Hi, I'm <strong>Yash</strong> — I build delightful, robust web systems.</h2>
+            <p class="muted">I craft full-stack applications, automate infrastructure (DevOps), and enjoy algorithmic
+              problem solving.</p>
+
+            <div class="badges">
+              <span class="badge">React</span>
+              <span class="badge">Node.js</span>
+              <span class="badge">Docker</span>
+              <span class="badge">Kubernetes</span>
+              <span class="badge">CI/CD</span>
+              <span class="badge">C++ / DSA</span>
+            </div>
+
+            <div class="about">
+              Passionate about shipping high-quality software and optimizing cloud workflows. I pair clean architecture
+              with pragmatic automation to help teams move faster.
+            </div>
+
+            <div style="margin-top:12px;">
+              <a href="#projects" class="btn" id="viewProjects">View Projects</a>
+            </div>
+          </div>
+        </article>
+
+        <section class="card">
+          <div class="card-header">
+            <h3>Skills & Focus</h3>
+            <div class="chip">Full-Stack • DevOps • DSA</div>
+          </div>
+
+          <div class="skills">
+            <div class="skill">
+              <div class="label"><span>Frontend (React / Vue)</span><span>90%</span></div>
+              <div class="bar"><span data-width="90%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="label"><span>Backend (Node / Express)</span><span>88%</span></div>
+              <div class="bar"><span data-width="88%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="label"><span>DevOps (Docker / K8s / CI)</span><span>80%</span></div>
+              <div class="bar"><span data-width="80%"></span></div>
+            </div>
+            <div class="skill">
+              <div class="label"><span>DSA & Competitive Programming</span><span>85%</span></div>
+              <div class="bar"><span data-width="85%"></span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="projects">
+          <div class="card-header">
+            <h3>Highlighted Projects</h3>
+            <small class="muted">Click a card to view details</small>
+          </div>
+
+          <div class="projects" aria-live="polite">
+            <div class="project" data-title="TaskFlow — Project Management"
+              data-desc="Real-time project management with collaboration, role-based access and analytics."
+              data-tech="React · Node · Socket.IO · PostgreSQL · Docker" tabindex="0">
+              <h4>TaskFlow</h4>
+              <p class="muted">Real-time project management and collaboration.</p>
+            </div>
+
+            <div class="project" data-title="CloudStream — CI/CD Pipelines"
+              data-desc="End-to-end CI/CD pipelines with Docker and Kubernetes, observability with Prometheus & Grafana."
+              data-tech="Docker · Kubernetes · GitHub Actions · Prometheus" tabindex="0">
+              <h4>CloudStream</h4>
+              <p class="muted">Automated CI/CD and cloud deployment templates.</p>
+            </div>
+
+            <div class="project" data-title="AlgoViz — DSA Visualizer"
+              data-desc="Interactive visualizer for common algorithms and data structures; great for teaching and debugging algorithm logic."
+              data-tech="TypeScript · Canvas · Algorithms" tabindex="0">
+              <h4>AlgoViz</h4>
+              <p class="muted">Visualize sorting, graphs, trees, and more.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h3>Achievements & Highlights</h3>
+          <ul class="muted">
+            <li>Deployed production-grade microservices with auto-scaling on Kubernetes.</li>
+            <li>Built CI pipelines that reduced release time by 60%.</li>
+            <li>Contributor to open-source tooling and algorithm visualizers.</li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- RIGHT column -->
+      <aside class="sidebar">
+        <div class="card contact">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <div>
+              <h4>Contact</h4>
+              <small class="muted">Let's build something great →</small>
+            </div>
+            <div style="text-align:right">
+              <div class="muted" style="font-weight:700">Open to work</div>
+              <div class="muted" style="font-size:12px">Remote / Hybrid</div>
+            </div>
+          </div>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <div>
+                <div class="strong">yash@example.com</div>
+                <small class="muted">Email</small>
+              </div>
+            </div>
+
+            <a class="contact-item link" href="#" target="_blank" rel="noopener noreferrer">
+              <div>
+                <div class="strong">github.com/your-username</div>
+                <small class="muted">GitHub</small>
+              </div>
+            </a>
+
+            <a class="contact-item link" href="#" target="_blank" rel="noopener noreferrer">
+              <div>
+                <div class="strong">linkedin.com/in/yourprofile</div>
+                <small class="muted">LinkedIn</small>
+              </div>
+            </a>
+          </div>
+
+          <div style="margin-top:12px;">
+            <div class="muted">Top Tech</div>
+            <div style="display:flex; gap:8px; margin-top:8px; flex-wrap:wrap;">
+              <div class="badge">React</div>
+              <div class="badge">Node</div>
+              <div class="badge">Docker</div>
+              <div class="badge">K8s</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4>Say Hello</h4>
+          <small class="muted">Or email me at yash@example.com</small>
+          <form id="contactForm" class="contact-form" onsubmit="event.preventDefault(); handleContact(event);">
+            <input type="text" id="name" placeholder="Your name" required />
+            <input type="email" id="email" placeholder="Your email" required />
+            <textarea id="message" placeholder="Brief message..." required></textarea>
+            <div style="display:flex; gap:8px;">
+              <button class="btn" type="submit">Send</button>
+              <a class="btn ghost" href="mailto:yash@example.com">Email</a>
+            </div>
+          </form>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <!-- Modal backdrop -->
+  <div id="modalBackdrop" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal" role="document" aria-label="Project details">
+      <div class="modal-header">
+        <div>
+          <h3 id="modalTitle">Project Title</h3>
+          <small id="modalTech" class="muted">Tech stack</small>
+        </div>
+        <div class="modal-actions">
+          <button id="openRepo" class="btn ghost">View Repo</button>
+          <button id="closeModal" class="btn" aria-label="Close project details">Close</button>
+        </div>
+      </div>
+      <p id="modalDesc" class="muted">Project description goes here...</p>
+
+      <div style="margin-top:12px; display:flex; gap:12px; flex-wrap:wrap;">
+        <a id="liveDemo" href="#" class="btn ghost">Live Demo</a>
+        <a id="readMore" href="#" class="btn">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to external script -->
+  <script src="./Yash.js" defer></script>
+</body>
+
+</html>

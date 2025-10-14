@@ -1,0 +1,423 @@
+/* styles.css
+   Main style file for Yash Bandal portfolio
+   Save as styles.css in same folder as index.html
+*/
+
+/* --------- Reset & base --------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    font-family: inherit;
+}
+
+/* --------- Theme variables --------- */
+:root {
+    --bg: #0f1724;
+    --card: rgba(255, 255, 255, 0.04);
+    --muted: rgba(255, 255, 255, 0.65);
+    --glass: rgba(255, 255, 255, 0.03);
+    --glass-2: rgba(255, 255, 255, 0.02);
+    --glass-border: rgba(255, 255, 255, 0.06);
+    --accent-start: #7b61ff;
+    --accent-end: #00d4ff;
+    --success: #22c55e;
+    --danger: #ef4444;
+    --shadow: 0 6px 24px rgba(2, 6, 23, 0.6);
+    --radius: 14px;
+}
+
+.light {
+    --bg: #f7fbff;
+    --card: rgba(6, 10, 18, 0.03);
+    --muted: rgba(10, 10, 10, 0.65);
+    --glass: rgba(255, 255, 255, 0.7);
+    --glass-2: rgba(255, 255, 255, 0.9);
+    --glass-border: rgba(0, 0, 0, 0.06);
+    --shadow: 0 10px 30px rgba(10, 10, 30, 0.08);
+}
+
+body {
+    background: radial-gradient(1200px 400px at 10% 10%, rgba(123, 97, 255, 0.08), transparent),
+        radial-gradient(1000px 350px at 90% 90%, rgba(0, 212, 255, 0.04), transparent),
+        var(--bg);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Container */
+.wrap {
+    max-width: 1100px;
+    margin: 48px auto;
+    padding: 28px;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.brand {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.logo {
+    width: 58px;
+    height: 58px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, var(--accent-start), var(--accent-end));
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+}
+
+.title p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.btn {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    color: inherit;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.btn.ghost {
+    background: transparent;
+    border: 1px dashed var(--glass-border);
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    opacity: 0.95;
+}
+
+/* Main layout */
+main {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 22px;
+    align-items: start;
+}
+
+/* Cards */
+.card {
+    background: linear-gradient(180deg, var(--card), transparent);
+    border-radius: var(--radius);
+    padding: 22px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--glass-border);
+}
+
+.hero {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #1f2937, #374151);
+    display: grid;
+    place-items: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    flex-shrink: 0;
+    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.5);
+}
+
+.bio h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.bio p {
+    margin: 6px 0 0 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.badges {
+    margin-top: 14px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    padding: 8px 10px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 12px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    border: 1px solid var(--glass-border);
+}
+
+.about {
+    margin-top: 16px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Skills */
+.skills {
+    margin-top: 18px;
+    display: grid;
+    gap: 12px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.skill .label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.bar {
+    background: var(--glass-2);
+    border-radius: 10px;
+    height: 10px;
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+}
+
+.bar>span {
+    display: block;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    background: linear-gradient(90deg, var(--accent-start), var(--accent-end));
+    transition: width 900ms cubic-bezier(.2, .9, .2, 1);
+}
+
+/* Sidebar */
+.sidebar {
+    position: sticky;
+    top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+}
+
+.contact-item .strong {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.link {
+    display: block;
+    color: inherit;
+}
+
+/* Projects */
+.projects {
+    display: grid;
+    gap: 12px;
+    margin-top: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.project {
+    padding: 14px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+    border: 1px solid var(--glass-border);
+    cursor: pointer;
+    transition: transform .18s ease;
+}
+
+.project:hover {
+    transform: translateY(-6px);
+}
+
+.project h4 {
+    margin: 0 0 8px 0;
+    font-size: 15px;
+}
+
+.project p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* Contact form */
+.contact-form {
+    display: grid;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+input,
+textarea {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--glass-border);
+    background: transparent;
+    color: inherit;
+    outline: none;
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 98px;
+    resize: vertical;
+}
+
+/* Modal */
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    display: none;
+    place-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 60;
+}
+
+.modal {
+    width: min(880px, 94%);
+    max-height: 86vh;
+    overflow: auto;
+    border-radius: 14px;
+    padding: 18px;
+    background: var(--card);
+    border: 1px solid var(--glass-border);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Utilities & responsive */
+.muted {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.chip {
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 12px;
+    background: transparent;
+    border: 1px solid var(--glass-border);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width:930px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: relative;
+        top: 0;
+    }
+}
+
+@media (max-width:420px) {
+    .avatar {
+        width: 86px;
+        height: 86px;
+        font-size: 28px;
+    }
+
+    .logo {
+        width: 48px;
+        height: 48px;
+        font-size: 16px;
+    }
+}
