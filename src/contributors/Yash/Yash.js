@@ -1,1 +1,0 @@
-// Yash portfolio JS file
