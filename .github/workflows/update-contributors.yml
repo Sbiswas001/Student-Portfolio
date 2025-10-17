@@ -18,10 +18,6 @@ jobs:
         with:
           node-version: "18"
 
-      - name: Install dependencies (if needed)
-        run: |
-          npm install
-
       - name: Run contributors list generator
         run: node src/assets/js/generateContributorsList.js
 
