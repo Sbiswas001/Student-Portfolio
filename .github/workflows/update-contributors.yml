@@ -3,11 +3,14 @@ name: Update Contributors JSON
 on:
   push:
     branches:
-      - main  # or "master" or any branch you use
+      - main # or "master" or any branch you use
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repo
