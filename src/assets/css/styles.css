@@ -1,123 +1,132 @@
-/* Reset and base styles */
+/* 1. Base & Thematic Styling */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Inter", sans-serif;
+  background-color: #0f172a; /* Dark blue-slate background */
+  color: #cbd5e1; /* Soft light gray for text */
+  background-image: radial-gradient(
+      circle at 15% 50%,
+      rgba(12, 74, 110, 0.3),
+      transparent 40%
+    ),
+    radial-gradient(circle at 85% 30%, rgba(107, 33, 168, 0.2), transparent 40%);
+  margin: 0;
   padding: 40px 20px;
-  background-image: url(../images/indexbackground.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #ffffff;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-/* Title */
+/* 2. Modern Typography & Header */
 h1 {
-  text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 30px;
-  color: #ffcc00;
-  text-shadow: 2px 2px 4px #000;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, #38bdf8, #a78bfa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
-/* Table Container */
-.styled-table-wrapper {
-  width: 100%;
-  overflow-x: auto;
-}
-
-/* Table */
+/* 3. Sleek & Modern Table */
 .styled-table {
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
   border-collapse: collapse;
-  background-color: rgba(30, 30, 30, 0.85);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  font-size: 1rem;
+  background-color: rgba(30, 41, 59, 0.5); /* Glassmorphism effect */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(51, 65, 85, 0.5);
   border-radius: 12px;
   overflow: hidden;
-  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-/* Headers */
 .styled-table thead tr {
-  background-color: #1f1f1f;
-  color: #ffcc00;
-  font-weight: 700;
-  font-size: 1rem;
+  background-color: rgba(15, 23, 42, 0.6);
+  color: #e2e8f0;
+  text-align: left;
+  font-weight: 600;
 }
 
-/* Table cells */
 .styled-table th,
 .styled-table td {
-  padding: 16px;
-  text-align: center;
-  border-bottom: 1px solid #444;
+  padding: 20px 24px;
 }
 
-/* Alternating row colors */
-.styled-table tbody tr:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.05);
-}
-
-/* Row hover effect */
-.styled-table tbody tr:hover {
-  background-color: rgba(255, 255, 255, 0.15);
+.styled-table tbody tr {
+  border-bottom: 1px solid rgba(51, 65, 85, 0.5);
   transition: background-color 0.3s ease;
 }
 
-/* Links */
+.styled-table tbody tr:last-of-type {
+  border-bottom: none;
+}
+
+.styled-table tbody tr:hover {
+  background-color: rgba(51, 65, 85, 0.4); /* Subtle hover effect */
+}
+
+/* 4. Refined Links */
 a {
-  color: #00e676;
+  color: #60a5fa; /* A friendly, accessible blue */
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #ffcc00;
-  text-decoration: underline;
+  color: #93c5fd;
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
-  .styled-table th, .styled-table td {
-    padding: 12px;
-    font-size: 0.9rem;
+/* 5. Responsive Design for Mobile */
+@media (max-width: 768px) {
+  body {
+    padding: 20px 10px;
   }
-}
 
-@media screen and (max-width: 480px) {
-  .styled-table, .styled-table thead, .styled-table tbody, .styled-table th, .styled-table td, .styled-table tr {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .styled-table thead {
+    display: none; /* Hide table headers on mobile */
+  }
+
+  .styled-table,
+  .styled-table tbody,
+  .styled-table tr,
+  .styled-table td {
     display: block;
     width: 100%;
   }
 
-  .styled-table thead {
-    display: none;
-  }
-
   .styled-table tr {
     margin-bottom: 15px;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(51, 65, 85, 0.5);
+    background-color: rgba(30, 41, 59, 0.7);
+  }
+
+  .styled-table tr:last-of-type {
+    margin-bottom: 0;
   }
 
   .styled-table td {
-    text-align: left;
-    padding: 10px;
+    text-align: right; /* Align value to the right */
+    padding: 12px 15px;
     position: relative;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+  }
+
+  .styled-table tr td:last-child {
+    border-bottom: none;
   }
 
   .styled-table td::before {
-    content: attr(data-label);
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-    color: #ffcc00;
+    content: attr(data-label); /* Use data-label for headers */
+    position: absolute;
+    left: 15px;
+    font-weight: 600;
+    color: #94a3b8;
   }
 }
