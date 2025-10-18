@@ -1,8 +1,7 @@
-/* 1. Base & Thematic Styling */
 body {
   font-family: "Inter", sans-serif;
-  background-color: #0f172a; /* Dark blue-slate background */
-  color: #cbd5e1; /* Soft light gray for text */
+  background-color: #0f172a;
+  color: #cbd5e1;
   background-image: radial-gradient(
       circle at 15% 50%,
       rgba(12, 74, 110, 0.3),
@@ -14,7 +13,6 @@ body {
   min-height: 100vh;
 }
 
-/* 2. Modern Typography & Header */
 h1 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -26,14 +24,13 @@ h1 {
   text-align: center;
 }
 
-/* 3. Sleek & Modern Table */
 .styled-table {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   border-collapse: collapse;
   font-size: 1rem;
-  background-color: rgba(30, 41, 59, 0.5); /* Glassmorphism effect */
+  background-color: rgba(30, 41, 59, 0.5);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(51, 65, 85, 0.5);
   border-radius: 12px;
@@ -63,12 +60,11 @@ h1 {
 }
 
 .styled-table tbody tr:hover {
-  background-color: rgba(51, 65, 85, 0.4); /* Subtle hover effect */
+  background-color: rgba(51, 65, 85, 0.4);
 }
 
-/* 4. Refined Links */
 a {
-  color: #60a5fa; /* A friendly, accessible blue */
+  color: #60a5fa;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -78,7 +74,6 @@ a:hover {
   color: #93c5fd;
 }
 
-/* 5. Responsive Design for Mobile */
 @media (max-width: 768px) {
   body {
     padding: 20px 10px;
@@ -89,7 +84,7 @@ a:hover {
   }
 
   .styled-table thead {
-    display: none; /* Hide table headers on mobile */
+    display: none;
   }
 
   .styled-table,
@@ -112,7 +107,7 @@ a:hover {
   }
 
   .styled-table td {
-    text-align: right; /* Align value to the right */
+    text-align: right;
     padding: 12px 15px;
     position: relative;
     border-bottom: 1px solid rgba(51, 65, 85, 0.5);
@@ -123,7 +118,7 @@ a:hover {
   }
 
   .styled-table td::before {
-    content: attr(data-label); /* Use data-label for headers */
+    content: attr(data-label);
     position: absolute;
     left: 15px;
     font-weight: 600;
