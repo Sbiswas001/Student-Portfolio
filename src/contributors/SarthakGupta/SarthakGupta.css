@@ -1,0 +1,20 @@
+body{
+    background-color:lightgray;
+}
+h1{
+    text-align: center;
+}
+#pic{
+    justify-content: center;
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    
+}
+
+
+
+table,th,td{
+    border:2px solid black;
+    border-collapse: collapse;
+}
