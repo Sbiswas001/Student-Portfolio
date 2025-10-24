@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+body{
+    height: 100%;
+    width: 100%;
+    padding: 1%;
+    overflow-x: hidden;
+    background: linear-gradient(#8B5DFF,#563A9C);
+    color: #FFF7D1;
+}
+h2{
+    font-weight: 900;
+    font-size: 32px;
+}
+h3{
+    font-size: 28px;
+}
+h4{
+    font-size: 20px;
+    font-weight: 599;
+    margin-bottom: 2px;
+}
+h5{
+    font-weight: 599;
+    font-size: 16px;
+}
+h6{
+    font-weight: 600;
+    font-size: 12px;
+}
+h6.dur{
+    color: #fff7d1ba;
+}
+a{
+    text-decoration: none;
+    color: #5af7ca;
+}
+a:hover{
+    display: inline-block;
+    transform: translateY(-10%);
+    text-shadow: 1px 1px 10px rgba(0, 252, 202, 0.676);
+    transition: 0.1s linear;
+}
+div.project-sub a{
+    padding-left: 3%;
+}
+div.profile-photo{
+    width: 100%;
+    padding: 1%;
+    margin: 1% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px dashed #FFF7D1;
+}
+div.contact{
+    display: flex;
+    justify-content: center;
+}
+div.contact a img{
+    height: 60px;
+    width: 60px;
+    padding: 8%;
+}
+div.profile-photo img#pfp{
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    border: 7px solid #FFF7D1;
+    box-shadow: 1px 1px 20px rgb(70, 70, 70);
+    margin-bottom: 2%;
+}
+div.profile-photo img#pfp:hover{
+    transform: scale(110%);
+    box-shadow: 1px 1px 20px rgb(255, 255, 255);
+    transition: 0.3s ease-in-out;
+}
+div.education-sub{
+    display: flex;
+    position: relative;
+    margin: 1% auto;
+}
+div.education-sub img{
+    width: 100%;
+    height: 100%;
+    background-color: #FFF7D1;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+div.img{
+    width: 50px;
+    height: 100%;
+    margin: 15px;
+}
+div.details{
+    padding-top: 14px;
+}
+div.project-sub{
+    margin: 5px 0.1%;
+}
+fieldset {
+  border: #FFF7D1;
+  border-bottom: 1px solid;
+  border-top: 1px solid;;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+}
+fieldset p,ul{
+  padding-left: 3% ;
+}
+
+
+
