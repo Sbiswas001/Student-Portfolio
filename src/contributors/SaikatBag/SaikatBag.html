@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="name" content="SaikatBag" />
+    <meta name="github" content="https://github.com/yourprofile" />
+    <meta name="linkedin" content="https://linkedin.com/in/yourprofile" />
+    <title>SaikatBag — Portfolio</title>
+    <!-- Fonts: Inter (system fallback kept) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="SaikatBag.css" />
+  </head>
+  <body>
+    <div class="page-root">
+    <header class="site-header">
+      <div class="container">
+        <div class="site-row">
+          <h1 class="brand">SaikatBag</h1>
+          <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <p class="tagline">Student • Developer • Learner</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Hero: uses the provided image. Save the attached image as:
+           src/contributors/SaikatBag/images/hero.png
+           (If you prefer a different name, update the `background-image` URL in the CSS.) -->
+      <section class="hero card">
+        <div class="hero-grid">
+          <div class="hero-left">
+            <p class="eyebrow">Hello, It's Me</p>
+            <h2 class="hero-title">SaikatBag</h2>
+            <p class="hero-sub">And I'm a Frontend Developer</p>
+            <p class="hero-desc">I build accessible, responsive web interfaces with a focus on clean design and performance.</p>
+            <div class="hero-actions">
+              <a class="btn primary" href="https://github.com/bagsaikat472-maker" target="_blank" rel="noopener">View GitHub</a>
+              <a class="btn ghost" href="#contact">Contact</a>
+            </div>
+            <div class="social small">
+              <a href="https://twitter.com/" aria-label="twitter">Twitter</a>
+              <a href="https://github.com/bagsaikat472-maker" aria-label="github">GitHub</a>
+              <a href="https://linkedin.com/in/saikat-bag-00ab30309" aria-label="linkedin">LinkedIn</a>
+            </div>
+          </div>
+          <div class="hero-right">
+            <!-- Hexagon masked avatar/hero art. Place your image at images/hero.png. -->
+            <div class="hex-wrap">
+              <img class="hero-avatar" src="images/hero.png" alt="SaikatBag avatar or hero image">
+              <!-- fallback svg placeholder shown if hero.png missing -->
+              <object class="hero-fallback" type="image/svg+xml" data="images/hero-placeholder.svg">Fallback</object>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="card about">
+        <h2>About Me</h2>
+        <p>
+          Hi — I'm <strong>SaikatBag</strong>, a student and aspiring developer. I enjoy
+          building small web projects and learning new technologies.
+        </p>
+      </section>
+
+      <section id="contact" class="card contact">
+        <h2>Contact</h2>
+        <div class="contact-links">
+          <a class="btn" href="https://github.com/bagsaikat472-maker" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://linkedin.com/in/saikat-bag-00ab30309" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; <span id="year"></span> SaikatBag</small>
+      </div>
+    </footer>
+
+    </div><!-- /.page-root -->
+
+    <script src="SaikatBag.js"></script>
+  </body>
+</html>

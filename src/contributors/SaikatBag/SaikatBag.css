@@ -1,0 +1,101 @@
+/* Minimal, modern styling for SaikatBag portfolio */
+:root{
+  /* Minimal color palette */
+  --bg: #f7fafc; /* very light */
+  --surface: #ffffff; /* cards */
+  --text: #0f1722; /* primary text */
+  --muted: #64748b; /* secondary */
+  --accent: #2563eb; /* primary accent */
+  --accent-2: #06b6d4; /* secondary accent */
+  --radius: 12px;
+  --glass: rgba(15,23,34,0.04);
+}
+
+*{box-sizing:border-box}
+html{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+body{margin:0;background:radial-gradient(1200px 600px at 10% 10%, rgba(6,182,212,0.04), transparent), linear-gradient(180deg,#041025,#071122 60%);color:var(--text);line-height:1.45;-webkit-font-smoothing:antialiased}
+
+/* page-root: central card that matches hero's look */
+.page-root{max-width:1100px;margin:40px auto;padding:0;border-radius:20px;background:linear-gradient(180deg,#071323 0%, #081827 60%);box-shadow:0 30px 80px rgba(2,6,23,0.7);overflow:hidden}
+.container{max-width:920px;margin:0 auto;padding:22px}
+
+.site-header{background:transparent;padding:22px 0;border-bottom:1px solid rgba(255,255,255,0.03)}
+.site-header .container{display:flex;flex-direction:column;gap:6px;padding:18px 22px}
+
+/* header alignment: brand + nav grouped, tagline separate */
+.site-row{display:flex;align-items:center;gap:18px}
+.site-row .brand{margin:0;color:rgba(230,238,248,0.9);font-weight:700}
+.site-row .nav{margin-left:12px}
+.site-header h1{margin:0;font-size:clamp(1.1rem, 2.2vw, 1.4rem);font-weight:700;color:rgba(230,238,248,0.9)}
+.tagline{margin:0;color:rgba(230,238,248,0.62);font-weight:500;text-align:center}
+
+.nav{display:flex;gap:14px}
+.nav a{color:rgba(230,238,248,0.7);text-decoration:none;font-weight:600}
+.nav a:hover{color:var(--accent-2)}
+
+.main-grid{display:grid;grid-template-columns:1fr;gap:18px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;margin:0;border-radius:18px;box-shadow:0 18px 40px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+h2{margin-top:0;font-size:1.05rem;color:rgba(230,238,248,0.92)}
+
+.card p{color:rgba(230,238,248,0.75);margin:0}
+.about p{margin:0;color:rgba(230,238,248,0.72)}
+
+.contact-links a{display:inline-block;padding:8px 12px;border-radius:8px;background:transparent;color:var(--accent-2);border:1px solid rgba(255,255,255,0.02);text-decoration:none;font-weight:600}
+.contact-links a:hover{background:rgba(6,182,212,0.06);border-color:rgba(6,182,212,0.12)}
+
+.profile-row{display:flex;align-items:center;gap:14px}
+.avatar{width:68px;height:68px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:inline-flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:1.25rem}
+
+.site-footer{border-top:1px solid rgba(15,23,34,0.03);padding:14px 0;text-align:center;color:var(--muted);font-size:.9rem}
+
+/* Responsive layout for larger screens */
+@media (min-width:780px){
+  .site-header .container{flex-direction:row;align-items:center}
+  .main-grid{grid-template-columns:2fr 1fr;align-items:start}
+  .card{padding:22px}
+  .about{order:1}
+  .contact{order:2}
+  /* spread header elements: site-row left, tagline right */
+  .site-row{flex:1}
+  .tagline{text-align:right}
+}
+
+/* Small tweaks for very small screens */
+@media (max-width:420px){
+  .avatar{width:56px;height:56px;border-radius:12px;font-size:1.05rem}
+  .container{padding:16px}
+}
+
+/* Hero / dark variant styles */
+.hero{background:linear-gradient(180deg,#081322 0%, #0b1624 100%);color:#e6eef8;margin:22px;overflow:visible;border-radius:14px}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:18px;align-items:center}
+.hero-left{padding:18px}
+.eyebrow{color:var(--accent-2);font-weight:600;margin:0 0 6px;text-transform:none}
+.hero-title{font-size:clamp(1.6rem, 4.5vw, 2.5rem);margin:6px 0 6px;color:#fff}
+.hero-sub{color:var(--accent-2);font-weight:700;margin:0 0 10px}
+.hero-desc{color:rgba(230,238,248,0.85);max-width:60ch}
+.hero-actions{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;border:1px solid transparent;background:transparent;color:var(--accent);font-weight:700;text-decoration:none}
+.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#03233b;border:none;box-shadow:0 8px 28px rgba(2,132,199,0.12)}
+.btn.ghost{background:transparent;color:rgba(230,238,248,0.9);border:1px solid rgba(255,255,255,0.06)}
+.social.small{margin-top:12px;color:rgba(230,238,248,0.7)}
+.social.small a{color:var(--accent-2);margin-right:10px}
+
+.hero-right{display:flex;justify-content:center;align-items:center;padding:18px}
+.hex-wrap{width:240px;height:240px;display:inline-block;position:relative}
+.hero-avatar{width:100%;height:100%;object-fit:cover;display:block;border-radius:18px;clip-path:polygon(25% 6.7%,75% 6.7%,100% 50%,75% 93.3%,25% 93.3%,0% 50%);box-shadow:0 24px 48px rgba(3,19,38,0.6),0 0 50px rgba(6,182,212,0.12) inset}
+.hero-fallback{position:absolute;inset:0;width:100%;height:100%}
+
+/* Make hero two-column on larger screens */
+@media (min-width:780px){
+  .hero-grid{grid-template-columns:1.1fr .9fr}
+  .hero{padding:28px}
+}
+
+@media (max-width:520px){
+  .hero-avatar{width:200px;height:200px}
+  .hex-wrap{width:200px;height:200px}
+  .hero-desc{max-width:40ch}
+}
+
+
