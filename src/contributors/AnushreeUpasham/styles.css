@@ -1,0 +1,517 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a1a2e;
+            --secondary: #16213e;
+            --accent: #e94560;
+            --accent2: #0f3460;
+            --gold: #f4a261;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --text: #2d3436;
+            --text-light: #636e72;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8eaf0 100%);
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Decorative background elements */
+        .bg-art {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.15;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .circle1 {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, var(--accent), var(--gold));
+            top: 10%;
+            left: -100px;
+            animation-delay: 0s;
+        }
+
+        .circle2 {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, var(--accent2), var(--accent));
+            bottom: 20%;
+            right: -50px;
+            animation-delay: 3s;
+        }
+
+        .circle3 {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, var(--gold), var(--accent));
+            top: 50%;
+            right: 15%;
+            animation-delay: 6s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -30px) rotate(120deg); }
+            66% { transform: translate(-20px, 20px) rotate(240deg); }
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 4rem 0 3rem;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 5rem;
+            font-weight: 300;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            letter-spacing: -2px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent), var(--gold));
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            color: var(--text-light);
+            font-style: italic;
+            margin-top: 2rem;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .contact-info a {
+            color: var(--accent2);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent);
+        }
+
+        /* Education Box */
+        .education-box {
+            background: linear-gradient(135deg, var(--white) 0%, #f8f9fa 100%);
+            padding: 2.5rem;
+            margin: 3rem 0;
+            border-left: 5px solid var(--accent);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .education-box h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+
+        .education-box .degree {
+            color: var(--text-light);
+            font-family: 'Segoe UI', sans-serif;
+            margin-bottom: 0.3rem;
+        }
+
+        .education-box .date {
+            color: var(--accent);
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Section Headers */
+        .section-title {
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin: 4rem 0 2.5rem;
+            text-align: center;
+            font-weight: 300;
+            position: relative;
+        }
+
+        .section-title::before {
+            content: '◆';
+            color: var(--accent);
+            margin-right: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .section-title::after {
+            content: '◆';
+            color: var(--gold);
+            margin-left: 1rem;
+            font-size: 1.5rem;
+        }
+
+        /* Grid Layouts */
+        .grid {
+            display: grid;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+
+        .grid-2 {
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        }
+
+        /* Coursework Cards */
+        .coursework-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem auto;
+            max-width: 1000px;
+        }
+
+        .course-card {
+            background: var(--white);
+            padding: 1.5rem;
+            text-align: center;
+            border: 2px solid var(--light);
+            box-shadow: 8px 8px 0 rgba(233, 69, 96, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0 rgba(233, 69, 96, 0.15);
+        }
+
+        .course-card::before {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent), var(--gold));
+            margin: 0 auto 1rem;
+        }
+
+        .course-card p {
+            color: var(--text);
+            font-family: 'Segoe UI', sans-serif;
+            font-weight: 500;
+        }
+
+        /* Project Cards */
+        .project-card {
+            background: linear-gradient(135deg, var(--white) 0%, #f8f9fa 100%);
+            padding: 2.5rem;
+            border-left: 5px solid var(--accent);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .project-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, transparent 50%, rgba(233, 69, 96, 0.05) 50%);
+        }
+
+        .project-card:hover {
+            transform: translateX(10px);
+            border-left-color: var(--gold);
+        }
+
+        .project-card h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+
+        .project-date {
+            color: var(--accent);
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-card ul {
+            list-style: none;
+            padding: 0;
+            color: var(--text-light);
+            line-height: 1.8;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .project-card li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .project-card li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-size: 1.2rem;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+        }
+
+        .tag {
+            padding: 0.5rem 1.2rem;
+            background: linear-gradient(135deg, var(--accent2), var(--accent));
+            color: white;
+            border-radius: 0;
+            font-size: 0.85rem;
+            font-family: 'Segoe UI', sans-serif;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .skill-card {
+            background: var(--white);
+            padding: 2rem;
+            border: 2px solid var(--light);
+            box-shadow: 10px 10px 0 rgba(15, 52, 96, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translate(-5px, -5px);
+            box-shadow: 15px 15px 0 rgba(15, 52, 96, 0.15);
+        }
+
+        .skill-card h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        .skill-card p {
+            color: var(--text-light);
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.8;
+        }
+
+        /* Responsibilities */
+        .resp-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin: 3rem 0;
+        }
+
+        .resp-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border: 2px dashed var(--accent);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .resp-card::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 2px solid var(--gold);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .resp-card:hover::before {
+            opacity: 1;
+        }
+
+        .resp-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .resp-card h3 {
+            font-size: 1.6rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+
+        .resp-card .role-info {
+            color: var(--accent);
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .resp-card ul {
+            list-style: none;
+            padding: 0;
+            color: var(--text-light);
+            line-height: 1.8;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .resp-card li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .resp-card li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+        }
+
+        /* Achievements */
+        .achievement-list {
+            max-width: 900px;
+            margin: 3rem auto;
+        }
+
+        .achievement {
+            background: var(--white);
+            padding: 2rem 2.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            border-left: 6px solid var(--gold);
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .achievement::before {
+            content: '';
+            position: absolute;
+            left: -3px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background: var(--gold);
+            border-radius: 50%;
+            box-shadow: 0 0 0 5px var(--white);
+        }
+
+        .achievement:hover {
+            transform: translateX(15px);
+            box-shadow: 10px 10px 30px rgba(0,0,0,0.12);
+        }
+
+        .achievement h3 {
+            font-size: 1.6rem;
+            color: var(--primary);
+            margin-bottom: 0.8rem;
+            font-weight: 400;
+        }
+
+        .achievement p {
+            color: var(--text-light);
+            line-height: 1.7;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 0 2rem;
+            margin-top: 5rem;
+            border-top: 2px solid var(--light);
+            font-family: 'Segoe UI', sans-serif;
+            color: var(--text-light);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .grid-2, .grid-3, .resp-grid, .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .coursework-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+        }
