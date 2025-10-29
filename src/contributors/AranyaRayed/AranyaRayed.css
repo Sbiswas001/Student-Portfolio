@@ -1,0 +1,202 @@
+body {
+    background-color:hsl(46, 100%, 89%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-style: italic;
+    text-align: center;
+}
+.container {
+  max-width: 1200px; 
+  margin: 0 auto;   
+  padding: 0 20px;  
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+  gap: 15px;
+}
+
+.tech-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
+  transition: transform 0.2s;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px); 
+}
+
+.tech-card p {
+  margin: 0;
+  font-weight: 600;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.project-card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  flex-grow: 1; 
+}
+
+.project-card a {
+  display: block; 
+  text-decoration: none;
+  background-color: #007BFF;
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 16px; 
+  transition: background-color 0.2s;
+}
+
+.project-card a:hover {
+  background-color: #0056b3; 
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.education-card {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.education-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.education-card p {
+  margin: 0;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.education-card p strong {
+  display: block;
+  margin: 16px 0 4px;
+  color: #444;
+  font-weight: 600;
+}
+
+.education-card ul {
+  padding-left: 20px;
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.education-card li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* 2. The base card style */
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fcfcfc;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.contact-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.contact-card p {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  flex-grow: 1; 
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-social {
+  flex-grow: 1; 
+  text-decoration: none;
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-social:hover {
+  transform: translateY(-2px);
+}
+
+.btn-social.linkedin {
+  background-color: #0A66C2; 
+}
+
+.btn-social.github {
+  background-color: #333;
+}
