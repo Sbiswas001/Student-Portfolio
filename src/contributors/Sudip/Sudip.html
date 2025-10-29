@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudip's Portfolio</title>
+  <style>
+    /* ===== CSS ===== */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 2rem;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #0077cc;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #ddd;
+    }
+
+    #projects {
+      margin: 2rem auto;
+      width: 80%;
+      text-align: left;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #333;
+      color: white;
+    }
+
+    /* Dark mode */
+    .dark-mode {
+      background-color: #222;
+      color: #f4f4f4;
+    }
+
+    .dark-mode header {
+      background-color: #444;
+    }
+
+    .dark-mode button {
+      background-color: #fff;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hi, I’m Sudip 👋</h1>
+    <p>2nd Year IT Student | Full Stack Developer</p>
+    <button id="theme-btn">Toggle Dark Mode</button>
+  </header>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <ul>
+      <li>Project 1 - Portfolio Website</li>
+      <li>Project 2 - Face Recognition Attendance System</li>
+      <li>Project 3 - Full Stack Web App</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Connect with me: 
+      <a href="https://github.com/Sudip-2005" target="_blank">GitHub</a> | 
+      <a href="https://linkedin.com/in/Sudip_Madhu-2005" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+
+  <script>
+    // ===== JS =====
+    const btn = document.getElementById('theme-btn');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
+
